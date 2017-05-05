@@ -9,7 +9,7 @@ import static spark.Spark.*;
 
 public class Main {
 
-    public static final String FTP_DIRECTORY_PATH = separator + "etc" + separator + "buzzdroids" + separator + "ftp";
+    public static final String FTP_DIRECTORY_PATH = separator + "home" + separator + "buzzdroids" + separator + "ftp";
 
     public static void main(String[] args) {
         port(9000);
@@ -22,7 +22,7 @@ public class Main {
 
         for (File file : directory.listFiles()) {
             if (file.isFile()) {
-                files += file.getName() + "\n";
+                files += file.getName() + "</br>";
             }
         }
 
