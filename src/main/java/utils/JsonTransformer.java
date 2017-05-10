@@ -1,3 +1,5 @@
+package utils;
+
 import com.google.gson.Gson;
 import spark.ResponseTransformer;
 
@@ -11,7 +13,7 @@ public class JsonTransformer {
         return new Gson().toJson(object);
     }
 
-    public static ResponseTransformer json() {
+    public static ResponseTransformer toJson() {
         return JsonTransformer::toJson;
     }
 

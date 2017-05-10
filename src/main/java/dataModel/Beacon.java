@@ -9,14 +9,6 @@ public class Beacon {
     private String color;
     private Coordinates coordinates;
 
-    public Beacon() {}
-
-    public Beacon(String name, String color, Coordinates coordinates) {
-        this.name = name;
-        this.color = color;
-        this.coordinates = coordinates;
-    }
-
     public String getName() {
         return name;
     }
