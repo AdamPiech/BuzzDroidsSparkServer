@@ -7029,3 +7029,1477 @@ Content-Type: application/json
 11-05-2017 00:45:18 DEBUG AbstractLifeCycle:177 - STARTED @496ms ServerConnector@4a98090c{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
 11-05-2017 00:45:18 INFO  Server:397 - Started @497ms
 11-05-2017 00:45:18 DEBUG AbstractLifeCycle:177 - STARTED @497ms org.eclipse.jetty.server.Server@c4b5d66
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:42:51 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:42:51 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:42:51 INFO  log:186 - Logging initialized @443ms
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@70fe7a22 added {org.eclipse.jetty.server.session.HashSessionManager@30ef95ae,AUTO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1495ef03 added {qtp606988839{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@1ff5df56[HTTP/1.1] added {HttpConfiguration@28b41ddd{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@1652c8e7]},POJO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@1495ef03,UNMANAGED}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{null,[]}{0.0.0.0:0} added {qtp606988839{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7d61519d,AUTO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@3dbae2fe,POJO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@1ff5df56[HTTP/1.1],AUTO}
+11-05-2017 11:42:51 DEBUG ServerConnector:396 - ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@1ff5df56[HTTP/1.1]
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@2df24eea,MANAGED}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1495ef03 added {ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1495ef03 added {spark.embeddedserver.jetty.JettyHandler@70fe7a22,MANAGED}
+11-05-2017 11:42:51 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:42:51 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@1495ef03
+11-05-2017 11:42:51 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:42:51 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@1495ef03
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting qtp606988839{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @548ms qtp606988839{STARTED,8<=8<=200,i=0,q=0}
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@70fe7a22
+11-05-2017 11:42:51 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@70fe7a22
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@30ef95ae
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@30ef95ae added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@53446aac,MANAGED}
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@4c62e473
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @569ms org.eclipse.jetty.server.session.HashSessionIdManager@4c62e473
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1495ef03 added {org.eclipse.jetty.server.session.HashSessionIdManager@4c62e473,MANAGED}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@30ef95ae added {org.eclipse.jetty.server.session.HashSessionIdManager@4c62e473,UNMANAGED}
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@53446aac
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @572ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@53446aac
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @575ms org.eclipse.jetty.server.session.HashSessionManager@30ef95ae
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @575ms spark.embeddedserver.jetty.JettyHandler@70fe7a22
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7d61519d
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @581ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7d61519d
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@1ff5df56[HTTP/1.1]
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @582ms HttpConnectionFactory@1ff5df56[HTTP/1.1]
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@2df24eea
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@74c35cc6 id=0 keys=-1 selected=-1
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @594ms org.eclipse.jetty.io.ManagedSelector@74c35cc6 id=0 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@74c35cc6 id=0 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@525a93ee id=1 keys=-1 selected=-1
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@74c35cc6 id=0 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ba9ca4e execute
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ba9ca4e produce enter
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ba9ca4e producing
+11-05-2017 11:42:51 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @596ms org.eclipse.jetty.io.ManagedSelector@525a93ee id=1 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@525a93ee id=1 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@525a93ee id=1 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6dbcbb4a execute
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@35636f38 id=2 keys=-1 selected=-1
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6dbcbb4a produce enter
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6dbcbb4a producing
+11-05-2017 11:42:51 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @598ms org.eclipse.jetty.io.ManagedSelector@35636f38 id=2 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@35636f38 id=2 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@35636f38 id=2 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@76813a86 id=3 keys=-1 selected=-1
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@389370 execute
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@389370 produce enter
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@389370 producing
+11-05-2017 11:42:51 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @599ms org.eclipse.jetty.io.ManagedSelector@76813a86 id=3 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@76813a86 id=3 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@76813a86 id=3 keys=0 selected=0
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@412b440c execute
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@412b440c produce enter
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @601ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@2df24eea
+11-05-2017 11:42:51 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@412b440c producing
+11-05-2017 11:42:51 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:42:51 DEBUG ContainerLifeCycle:323 - ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@f47f1ae,POJO}
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:373 - queue acceptor-0@f47f1ae
+11-05-2017 11:42:51 DEBUG QueuedThreadPool:571 - run acceptor-0@f47f1ae
+11-05-2017 11:42:51 INFO  ServerConnector:270 - Started ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @603ms ServerConnector@3ca186d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:42:51 INFO  Server:397 - Started @604ms
+11-05-2017 11:42:51 DEBUG AbstractLifeCycle:177 - STARTED @605ms org.eclipse.jetty.server.Server@1495ef03
+11-05-2017 11:42:51 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:9001], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 11:42:52 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 11:42:53 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 11:42:53 INFO  cluster:76 - Exception in monitor thread while connecting to server localhost:9001
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 11:42:53 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:43:04 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 11:43:04 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:43:15 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 11:43:15 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:43:21 DEBUG session:347 - Scavenging sessions at 1494495801594
+11-05-2017 11:43:26 DEBUG connection:56 - Closing connection connectionId{localValue:4}
+11-05-2017 11:43:26 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:43:28 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:43:28 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:43:28 INFO  log:186 - Logging initialized @370ms
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@2a6a222c added {org.eclipse.jetty.server.session.HashSessionManager@56559ef7,AUTO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {qtp1003488220{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@ec855bc[HTTP/1.1] added {HttpConfiguration@1358f490{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@41dbc9a]},POJO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@23ff67fb,UNMANAGED}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {qtp1003488220{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b,AUTO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@151eff0b,POJO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@ec855bc[HTTP/1.1],AUTO}
+11-05-2017 11:43:28 DEBUG ServerConnector:396 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09,MANAGED}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {spark.embeddedserver.jetty.JettyHandler@2a6a222c,MANAGED}
+11-05-2017 11:43:28 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:43:28 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:43:28 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:43:28 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting qtp1003488220{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:177 - STARTED @447ms qtp1003488220{STARTED,8<=8<=200,i=7,q=0}
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:43:28 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@56559ef7
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@56559ef7 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a,MANAGED}
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:177 - STARTED @456ms org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3,MANAGED}
+11-05-2017 11:43:28 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@56559ef7 added {org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3,UNMANAGED}
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:177 - STARTED @458ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:177 - STARTED @460ms org.eclipse.jetty.server.session.HashSessionManager@56559ef7
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:177 - STARTED @460ms spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:43:28 DEBUG AbstractLifeCycle:185 - starting ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:43:28 WARN  AbstractLifeCycle:213 - FAILED ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:129)
+	at spark.Service.lambda$init$1(Service.java:452)
+	at java.lang.Thread.run(Thread.java:745)
+11-05-2017 11:43:28 WARN  AbstractLifeCycle:213 - FAILED org.eclipse.jetty.server.Server@23ff67fb: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:129)
+	at spark.Service.lambda$init$1(Service.java:452)
+	at java.lang.Thread.run(Thread.java:745)
+11-05-2017 11:43:28 ERROR EmbeddedJettyServer:133 - ignite failed
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:129)
+	at spark.Service.lambda$init$1(Service.java:452)
+	at java.lang.Thread.run(Thread.java:745)
+11-05-2017 11:43:37 DEBUG connection:56 - Closing connection connectionId{localValue:5}
+11-05-2017 11:43:37 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:43:48 DEBUG connection:56 - Closing connection connectionId{localValue:6}
+11-05-2017 11:43:48 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:43:51 DEBUG session:347 - Scavenging sessions at 1494495831596
+11-05-2017 11:43:59 DEBUG connection:56 - Closing connection connectionId{localValue:7}
+11-05-2017 11:43:59 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:44:10 DEBUG connection:56 - Closing connection connectionId{localValue:8}
+11-05-2017 11:44:10 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:44:21 DEBUG connection:56 - Closing connection connectionId{localValue:9}
+11-05-2017 11:44:21 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9001, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:44:21 DEBUG session:347 - Scavenging sessions at 1494495861598
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:44:29 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:44:29 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:44:29 INFO  log:186 - Logging initialized @357ms
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@52e1ae53 added {org.eclipse.jetty.server.session.HashSessionManager@17247f12,AUTO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {qtp1902122517{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@136d936b[HTTP/1.1] added {HttpConfiguration@5aa7e345{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@51be282]},POJO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@1ba6e1b,UNMANAGED}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {qtp1902122517{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@429aa705,AUTO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@3c165761,POJO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@136d936b[HTTP/1.1],AUTO}
+11-05-2017 11:44:29 DEBUG ServerConnector:396 - ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@136d936b[HTTP/1.1]
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@369e2a09,MANAGED}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {spark.embeddedserver.jetty.JettyHandler@52e1ae53,MANAGED}
+11-05-2017 11:44:29 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:44:29 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@1ba6e1b
+11-05-2017 11:44:29 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:44:29 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@1ba6e1b
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting qtp1902122517{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @432ms qtp1902122517{STARTED,8<=8<=200,i=8,q=0}
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@52e1ae53
+11-05-2017 11:44:29 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@52e1ae53
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@17247f12
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@17247f12 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3db69307,MANAGED}
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @440ms org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7,MANAGED}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@17247f12 added {org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7,UNMANAGED}
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3db69307
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @442ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3db69307
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @444ms org.eclipse.jetty.server.session.HashSessionManager@17247f12
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @444ms spark.embeddedserver.jetty.JettyHandler@52e1ae53
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@429aa705
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @450ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@429aa705
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@136d936b[HTTP/1.1]
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @450ms HttpConnectionFactory@136d936b[HTTP/1.1]
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@369e2a09
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@753fb4ae id=0 keys=-1 selected=-1
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @462ms org.eclipse.jetty.io.ManagedSelector@753fb4ae id=0 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@753fb4ae id=0 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@19414a1c id=1 keys=-1 selected=-1
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@753fb4ae id=0 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2d652456 execute
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2d652456 produce enter
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2d652456 producing
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @463ms org.eclipse.jetty.io.ManagedSelector@19414a1c id=1 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@19414a1c id=1 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@32a49632 id=2 keys=-1 selected=-1
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@19414a1c id=1 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2f07d568 execute
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2f07d568 produce enter
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2f07d568 producing
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @465ms org.eclipse.jetty.io.ManagedSelector@32a49632 id=2 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@32a49632 id=2 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@7d1b9900 id=3 keys=-1 selected=-1
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@32a49632 id=2 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1ac2a9b3 execute
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1ac2a9b3 produce enter
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1ac2a9b3 producing
+11-05-2017 11:44:29 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @467ms org.eclipse.jetty.io.ManagedSelector@7d1b9900 id=3 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@7d1b9900 id=3 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@7d1b9900 id=3 keys=0 selected=0
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@66237509 execute
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@66237509 produce enter
+11-05-2017 11:44:29 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@66237509 producing
+11-05-2017 11:44:29 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @468ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@369e2a09
+11-05-2017 11:44:29 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@7d963567,POJO}
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:373 - queue acceptor-0@7d963567
+11-05-2017 11:44:29 DEBUG QueuedThreadPool:571 - run acceptor-0@7d963567
+11-05-2017 11:44:29 INFO  ServerConnector:270 - Started ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @471ms ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:44:29 INFO  Server:397 - Started @471ms
+11-05-2017 11:44:29 DEBUG AbstractLifeCycle:177 - STARTED @472ms org.eclipse.jetty.server.Server@1ba6e1b
+11-05-2017 11:44:29 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:9100], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 11:44:29 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 11:44:30 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 11:44:30 INFO  cluster:76 - Exception in monitor thread while connecting to server localhost:9100
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 11:44:30 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:44:41 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 11:44:41 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:44:52 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 11:44:52 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:44:59 DEBUG session:347 - Scavenging sessions at 1494495899165
+11-05-2017 11:45:03 DEBUG connection:56 - Closing connection connectionId{localValue:4}
+11-05-2017 11:45:03 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:45:14 DEBUG connection:56 - Closing connection connectionId{localValue:5}
+11-05-2017 11:45:14 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:45:25 DEBUG connection:56 - Closing connection connectionId{localValue:6}
+11-05-2017 11:45:25 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:45:29 DEBUG session:347 - Scavenging sessions at 1494495929167
+11-05-2017 11:45:36 DEBUG connection:56 - Closing connection connectionId{localValue:7}
+11-05-2017 11:45:36 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:9100, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:45:48 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:45:48 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:45:48 INFO  log:186 - Logging initialized @329ms
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@2a6a222c added {org.eclipse.jetty.server.session.HashSessionManager@56559ef7,AUTO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {qtp1003488220{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@ec855bc[HTTP/1.1] added {HttpConfiguration@1358f490{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@41dbc9a]},POJO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@23ff67fb,UNMANAGED}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {qtp1003488220{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b,AUTO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@151eff0b,POJO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@ec855bc[HTTP/1.1],AUTO}
+11-05-2017 11:45:48 DEBUG ServerConnector:396 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09,MANAGED}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {spark.embeddedserver.jetty.JettyHandler@2a6a222c,MANAGED}
+11-05-2017 11:45:48 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:45:48 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:45:48 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:45:48 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting qtp1003488220{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @404ms qtp1003488220{STARTED,8<=8<=200,i=5,q=0}
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:45:48 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@56559ef7
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@56559ef7 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a,MANAGED}
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @411ms org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3,MANAGED}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@56559ef7 added {org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3,UNMANAGED}
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @414ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @415ms org.eclipse.jetty.server.session.HashSessionManager@56559ef7
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @415ms spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @421ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @421ms HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=-1 selected=-1
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @432ms org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=-1 selected=-1
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@188add5 execute
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@188add5 produce enter
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@188add5 producing
+11-05-2017 11:45:48 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @434ms org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=-1 selected=-1
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@45bd5a41 execute
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@45bd5a41 produce enter
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@45bd5a41 producing
+11-05-2017 11:45:48 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @435ms org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=-1 selected=-1
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7fce4a57 execute
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7fce4a57 produce enter
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7fce4a57 producing
+11-05-2017 11:45:48 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @437ms org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @438ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=0 selected=0
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@50054daa execute
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@50054daa produce enter
+11-05-2017 11:45:48 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@50054daa producing
+11-05-2017 11:45:48 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:45:48 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@4db153c6,POJO}
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:373 - queue acceptor-0@4db153c6
+11-05-2017 11:45:48 DEBUG QueuedThreadPool:571 - run acceptor-0@4db153c6
+11-05-2017 11:45:48 INFO  ServerConnector:270 - Started ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @440ms ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:45:48 INFO  Server:397 - Started @440ms
+11-05-2017 11:45:48 DEBUG AbstractLifeCycle:177 - STARTED @441ms org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:45:48 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 11:45:48 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 11:45:49 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 11:45:49 INFO  cluster:76 - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 11:45:49 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:46:00 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 11:46:00 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:46:11 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 11:46:11 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:46:18 DEBUG session:347 - Scavenging sessions at 1494495978395
+11-05-2017 11:46:22 DEBUG connection:56 - Closing connection connectionId{localValue:4}
+11-05-2017 11:46:22 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:46:33 DEBUG connection:56 - Closing connection connectionId{localValue:5}
+11-05-2017 11:46:33 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:46:34 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:46:34 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:46:34 INFO  log:186 - Logging initialized @367ms
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@52e1ae53 added {org.eclipse.jetty.server.session.HashSessionManager@17247f12,AUTO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {qtp1902122517{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@136d936b[HTTP/1.1] added {HttpConfiguration@5aa7e345{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@51be282]},POJO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@1ba6e1b,UNMANAGED}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {qtp1902122517{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@429aa705,AUTO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@3c165761,POJO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@136d936b[HTTP/1.1],AUTO}
+11-05-2017 11:46:34 DEBUG ServerConnector:396 - ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@136d936b[HTTP/1.1]
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@369e2a09,MANAGED}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {spark.embeddedserver.jetty.JettyHandler@52e1ae53,MANAGED}
+11-05-2017 11:46:34 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:46:34 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@1ba6e1b
+11-05-2017 11:46:34 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:46:34 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@1ba6e1b
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting qtp1902122517{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:177 - STARTED @453ms qtp1902122517{STARTED,8<=8<=200,i=0,q=0}
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@52e1ae53
+11-05-2017 11:46:34 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@52e1ae53
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@17247f12
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@17247f12 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3db69307,MANAGED}
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:177 - STARTED @464ms org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1ba6e1b added {org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7,MANAGED}
+11-05-2017 11:46:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@17247f12 added {org.eclipse.jetty.server.session.HashSessionIdManager@969f7b7,UNMANAGED}
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3db69307
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:177 - STARTED @467ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3db69307
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:177 - STARTED @469ms org.eclipse.jetty.server.session.HashSessionManager@17247f12
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:177 - STARTED @470ms spark.embeddedserver.jetty.JettyHandler@52e1ae53
+11-05-2017 11:46:34 DEBUG AbstractLifeCycle:185 - starting ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:46:34 WARN  AbstractLifeCycle:213 - FAILED ServerConnector@24008c9f{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:129)
+	at spark.Service.lambda$init$1(Service.java:452)
+	at java.lang.Thread.run(Thread.java:745)
+11-05-2017 11:46:34 WARN  AbstractLifeCycle:213 - FAILED org.eclipse.jetty.server.Server@1ba6e1b: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:129)
+	at spark.Service.lambda$init$1(Service.java:452)
+	at java.lang.Thread.run(Thread.java:745)
+11-05-2017 11:46:34 ERROR EmbeddedJettyServer:133 - ignite failed
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:129)
+	at spark.Service.lambda$init$1(Service.java:452)
+	at java.lang.Thread.run(Thread.java:745)
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:46:39 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:46:39 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:46:39 INFO  log:186 - Logging initialized @362ms
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@2a6a222c added {org.eclipse.jetty.server.session.HashSessionManager@56559ef7,AUTO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {qtp1003488220{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@ec855bc[HTTP/1.1] added {HttpConfiguration@1358f490{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@41dbc9a]},POJO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@23ff67fb,UNMANAGED}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {qtp1003488220{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b,AUTO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@151eff0b,POJO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@ec855bc[HTTP/1.1],AUTO}
+11-05-2017 11:46:39 DEBUG ServerConnector:396 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09,MANAGED}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {spark.embeddedserver.jetty.JettyHandler@2a6a222c,MANAGED}
+11-05-2017 11:46:39 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:46:39 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:46:39 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:46:39 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting qtp1003488220{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @439ms qtp1003488220{STARTED,8<=8<=200,i=4,q=0}
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:46:39 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@56559ef7
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@56559ef7 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a,MANAGED}
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @446ms org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@23ff67fb added {org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3,MANAGED}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@56559ef7 added {org.eclipse.jetty.server.session.HashSessionIdManager@7186f2d3,UNMANAGED}
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @448ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3de3533a
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @450ms org.eclipse.jetty.server.session.HashSessionManager@56559ef7
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @450ms spark.embeddedserver.jetty.JettyHandler@2a6a222c
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @456ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6c82df7b
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @457ms HttpConnectionFactory@ec855bc[HTTP/1.1]
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=-1 selected=-1
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @468ms org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=-1 selected=-1
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@40168534 id=0 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@188add5 execute
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@188add5 produce enter
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@188add5 producing
+11-05-2017 11:46:39 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @470ms org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=-1 selected=-1
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @472ms org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@2e391f9e id=1 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1ff80f21 execute
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1ff80f21 produce enter
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=-1 selected=-1
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@4f051b6 id=2 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7465b26a execute
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7465b26a produce enter
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7465b26a producing
+11-05-2017 11:46:39 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1ff80f21 producing
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @474ms org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @475ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@4d8cec09
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@ba489f0 id=3 keys=0 selected=0
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6224bbb0 execute
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6224bbb0 produce enter
+11-05-2017 11:46:39 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6224bbb0 producing
+11-05-2017 11:46:39 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:46:39 DEBUG ContainerLifeCycle:323 - ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@4db153c6,POJO}
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:373 - queue acceptor-0@4db153c6
+11-05-2017 11:46:39 DEBUG QueuedThreadPool:571 - run acceptor-0@4db153c6
+11-05-2017 11:46:39 INFO  ServerConnector:270 - Started ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @476ms ServerConnector@24fad9f5{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:46:39 INFO  Server:397 - Started @476ms
+11-05-2017 11:46:39 DEBUG AbstractLifeCycle:177 - STARTED @477ms org.eclipse.jetty.server.Server@23ff67fb
+11-05-2017 11:46:39 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 11:46:39 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 11:46:40 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 11:46:40 INFO  cluster:76 - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 11:46:40 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:46:51 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 11:46:51 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:47:02 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 11:47:02 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:47:09 DEBUG session:347 - Scavenging sessions at 1494496029435
+11-05-2017 11:47:13 DEBUG connection:56 - Closing connection connectionId{localValue:4}
+11-05-2017 11:47:13 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:47:24 DEBUG connection:56 - Closing connection connectionId{localValue:5}
+11-05-2017 11:47:24 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:47:35 DEBUG connection:56 - Closing connection connectionId{localValue:6}
+11-05-2017 11:47:35 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:47:39 DEBUG session:347 - Scavenging sessions at 1494496059437
+11-05-2017 11:47:46 DEBUG connection:56 - Closing connection connectionId{localValue:7}
+11-05-2017 11:47:46 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:47:57 DEBUG connection:56 - Closing connection connectionId{localValue:8}
+11-05-2017 11:47:57 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:48:08 DEBUG connection:56 - Closing connection connectionId{localValue:9}
+11-05-2017 11:48:08 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:48:09 DEBUG session:347 - Scavenging sessions at 1494496089438
+11-05-2017 11:48:19 DEBUG connection:56 - Closing connection connectionId{localValue:10}
+11-05-2017 11:48:19 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:48:30 DEBUG connection:56 - Closing connection connectionId{localValue:11}
+11-05-2017 11:48:30 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:48:39 DEBUG session:347 - Scavenging sessions at 1494496119439
+11-05-2017 11:48:41 DEBUG connection:56 - Closing connection connectionId{localValue:12}
+11-05-2017 11:48:41 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:48:52 DEBUG connection:56 - Closing connection connectionId{localValue:13}
+11-05-2017 11:48:52 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:49:04 DEBUG connection:56 - Closing connection connectionId{localValue:14}
+11-05-2017 11:49:04 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:49:09 DEBUG session:347 - Scavenging sessions at 1494496149441
+11-05-2017 11:49:15 DEBUG connection:56 - Closing connection connectionId{localValue:15}
+11-05-2017 11:49:15 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:49:26 DEBUG connection:56 - Closing connection connectionId{localValue:16}
+11-05-2017 11:49:26 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:49:37 DEBUG connection:56 - Closing connection connectionId{localValue:17}
+11-05-2017 11:49:37 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:49:39 DEBUG session:347 - Scavenging sessions at 1494496179442
+11-05-2017 11:49:48 DEBUG connection:56 - Closing connection connectionId{localValue:18}
+11-05-2017 11:49:48 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:49:59 DEBUG connection:56 - Closing connection connectionId{localValue:19}
+11-05-2017 11:49:59 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:50:09 DEBUG session:347 - Scavenging sessions at 1494496209443
+11-05-2017 11:50:10 DEBUG connection:56 - Closing connection connectionId{localValue:20}
+11-05-2017 11:50:10 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:50:21 DEBUG connection:56 - Closing connection connectionId{localValue:21}
+11-05-2017 11:50:21 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:50:32 DEBUG connection:56 - Closing connection connectionId{localValue:22}
+11-05-2017 11:50:32 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:50:39 DEBUG session:347 - Scavenging sessions at 1494496239444
+11-05-2017 11:50:43 DEBUG connection:56 - Closing connection connectionId{localValue:23}
+11-05-2017 11:50:43 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:50:54 DEBUG connection:56 - Closing connection connectionId{localValue:24}
+11-05-2017 11:50:54 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:51:05 DEBUG connection:56 - Closing connection connectionId{localValue:25}
+11-05-2017 11:51:05 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:51:09 DEBUG session:347 - Scavenging sessions at 1494496269446
+11-05-2017 11:51:16 DEBUG connection:56 - Closing connection connectionId{localValue:26}
+11-05-2017 11:51:16 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:51:27 DEBUG connection:56 - Closing connection connectionId{localValue:27}
+11-05-2017 11:51:27 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:51:38 DEBUG connection:56 - Closing connection connectionId{localValue:28}
+11-05-2017 11:51:38 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:51:39 DEBUG session:347 - Scavenging sessions at 1494496299447
+11-05-2017 11:51:49 DEBUG connection:56 - Closing connection connectionId{localValue:29}
+11-05-2017 11:51:49 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:52:00 DEBUG connection:56 - Closing connection connectionId{localValue:30}
+11-05-2017 11:52:00 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:52:09 DEBUG session:347 - Scavenging sessions at 1494496329448
+11-05-2017 11:52:11 DEBUG connection:56 - Closing connection connectionId{localValue:31}
+11-05-2017 11:52:11 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:52:22 DEBUG connection:56 - Closing connection connectionId{localValue:32}
+11-05-2017 11:52:22 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:52:33 DEBUG connection:56 - Closing connection connectionId{localValue:33}
+11-05-2017 11:52:33 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:52:39 DEBUG session:347 - Scavenging sessions at 1494496359450
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 11:52:44 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 11:52:44 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 11:52:44 INFO  log:186 - Logging initialized @368ms
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@5fd48f71 added {org.eclipse.jetty.server.session.HashSessionManager@3ba473b0,AUTO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {qtp202441908{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@222f2319[HTTP/1.1] added {HttpConfiguration@1815a5d1{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@4b07bcdb]},POJO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@6fb2adb3,UNMANAGED}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {qtp202441908{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86,AUTO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@79489331,POJO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@222f2319[HTTP/1.1],AUTO}
+11-05-2017 11:52:44 DEBUG ServerConnector:396 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d,MANAGED}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {spark.embeddedserver.jetty.JettyHandler@5fd48f71,MANAGED}
+11-05-2017 11:52:44 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 11:52:44 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 11:52:44 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 11:52:44 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting qtp202441908{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @445ms qtp202441908{STARTED,8<=8<=200,i=2,q=0}
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 11:52:44 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@3ba473b0
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@3ba473b0 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c,MANAGED}
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @459ms org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2,MANAGED}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@3ba473b0 added {org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2,UNMANAGED}
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @462ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @464ms org.eclipse.jetty.server.session.HashSessionManager@3ba473b0
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @464ms spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @470ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @471ms HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=-1 selected=-1
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @483ms org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=-1 selected=-1
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@389370 execute
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@389370 produce enter
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@389370 producing
+11-05-2017 11:52:44 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @485ms org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=-1 selected=-1
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ffe9373 execute
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ffe9373 produce enter
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ffe9373 producing
+11-05-2017 11:52:44 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @487ms org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=-1 selected=-1
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6dbcbb4a execute
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6dbcbb4a produce enter
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6dbcbb4a producing
+11-05-2017 11:52:44 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @488ms org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @489ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@412b440c execute
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@412b440c produce enter
+11-05-2017 11:52:44 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@412b440c producing
+11-05-2017 11:52:44 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 11:52:44 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@7f3b81dc,POJO}
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:373 - queue acceptor-0@7f3b81dc
+11-05-2017 11:52:44 DEBUG QueuedThreadPool:571 - run acceptor-0@7f3b81dc
+11-05-2017 11:52:44 INFO  ServerConnector:270 - Started ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @493ms ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 11:52:44 INFO  Server:397 - Started @493ms
+11-05-2017 11:52:44 DEBUG AbstractLifeCycle:177 - STARTED @494ms org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 11:52:44 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 11:52:45 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 11:52:46 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 11:52:46 INFO  cluster:76 - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 11:52:46 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:52:57 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 11:52:57 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 11:53:08 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 11:53:08 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@fe18270
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@6d3af739
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@7e9a5fbe
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@71623278
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@5a4041cc
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@61ca2dfa
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@134593bf
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@7ba18f1b
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@1068e947
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@aecb35a
+11-05-2017 12:05:58 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 12:05:58 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@8b87145
+11-05-2017 12:05:58 INFO  log:186 - Logging initialized @844ms
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@2aadd80c added {org.eclipse.jetty.server.session.HashSessionManager@37b3a54f,AUTO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1bb89b14 added {qtp793156855{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@5b573d4e[HTTP/1.1] added {HttpConfiguration@4d82689f{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@6808f07e]},POJO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@1bb89b14,UNMANAGED}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{null,[]}{0.0.0.0:0} added {qtp793156855{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@60d4846b,AUTO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@a4ec886,POJO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@5b573d4e[HTTP/1.1],AUTO}
+11-05-2017 12:05:58 DEBUG ServerConnector:396 - ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@5b573d4e[HTTP/1.1]
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7133eaaf,MANAGED}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1bb89b14 added {ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1bb89b14 added {spark.embeddedserver.jetty.JettyHandler@2aadd80c,MANAGED}
+11-05-2017 12:05:58 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 12:05:58 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@1bb89b14
+11-05-2017 12:05:58 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 12:05:58 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@1bb89b14
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting qtp793156855{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @903ms qtp793156855{STARTED,8<=8<=200,i=7,q=0}
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@2aadd80c
+11-05-2017 12:05:58 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@2aadd80c
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@37b3a54f
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@37b3a54f added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6bc17804,MANAGED}
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@47b15bb6
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @908ms org.eclipse.jetty.server.session.HashSessionIdManager@47b15bb6
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@1bb89b14 added {org.eclipse.jetty.server.session.HashSessionIdManager@47b15bb6,MANAGED}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@37b3a54f added {org.eclipse.jetty.server.session.HashSessionIdManager@47b15bb6,UNMANAGED}
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6bc17804
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @909ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6bc17804
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @910ms org.eclipse.jetty.server.session.HashSessionManager@37b3a54f
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @910ms spark.embeddedserver.jetty.JettyHandler@2aadd80c
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@60d4846b
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @913ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@60d4846b
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@5b573d4e[HTTP/1.1]
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @914ms HttpConnectionFactory@5b573d4e[HTTP/1.1]
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7133eaaf
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@57fe9db1 id=0 keys=-1 selected=-1
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @923ms org.eclipse.jetty.io.ManagedSelector@57fe9db1 id=0 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@57fe9db1 id=0 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@2608454e id=1 keys=-1 selected=-1
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@57fe9db1 id=0 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1e5d3885 execute
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1e5d3885 produce enter
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1e5d3885 producing
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @924ms org.eclipse.jetty.io.ManagedSelector@2608454e id=1 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@2608454e id=1 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@2608454e id=1 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@1ce36364 id=2 keys=-1 selected=-1
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ddb5522 execute
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ddb5522 produce enter
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ddb5522 producing
+11-05-2017 12:05:58 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @926ms org.eclipse.jetty.io.ManagedSelector@1ce36364 id=2 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@1ce36364 id=2 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@1ce36364 id=2 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@16353e70 id=3 keys=-1 selected=-1
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51df1b4f execute
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51df1b4f produce enter
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51df1b4f producing
+11-05-2017 12:05:58 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @927ms org.eclipse.jetty.io.ManagedSelector@16353e70 id=3 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@16353e70 id=3 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @927ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7133eaaf
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@16353e70 id=3 keys=0 selected=0
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@8b9141a execute
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@8b9141a produce enter
+11-05-2017 12:05:58 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@8b9141a producing
+11-05-2017 12:05:58 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:05:58 DEBUG ContainerLifeCycle:323 - ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@19e99b82,POJO}
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:373 - queue acceptor-0@19e99b82
+11-05-2017 12:05:58 DEBUG QueuedThreadPool:571 - run acceptor-0@19e99b82
+11-05-2017 12:05:58 INFO  ServerConnector:270 - Started ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @928ms ServerConnector@15a26416{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:05:58 INFO  Server:397 - Started @929ms
+11-05-2017 12:05:58 DEBUG AbstractLifeCycle:177 - STARTED @929ms org.eclipse.jetty.server.Server@1bb89b14
+11-05-2017 12:05:59 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 12:05:59 INFO  cluster:76 - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 12:05:59 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:06:10 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 12:06:10 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:06:21 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 12:06:21 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:06:28 DEBUG session:347 - Scavenging sessions at 1494497188429
+11-05-2017 12:06:32 DEBUG connection:56 - Closing connection connectionId{localValue:4}
+11-05-2017 12:06:32 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:06:43 DEBUG connection:56 - Closing connection connectionId{localValue:5}
+11-05-2017 12:06:43 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 12:06:55 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 12:06:55 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 12:06:55 INFO  log:186 - Logging initialized @400ms
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@48ac1742 added {org.eclipse.jetty.server.session.HashSessionManager@4891f6ba,AUTO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@74c1afe6 added {qtp2113116610{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@4aac3fdd[HTTP/1.1] added {HttpConfiguration@6a9d62d{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@7bf816df]},POJO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@74c1afe6,UNMANAGED}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{null,[]}{0.0.0.0:0} added {qtp2113116610{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@5d04e38f,AUTO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@1bf65486,POJO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@4aac3fdd[HTTP/1.1],AUTO}
+11-05-2017 12:06:55 DEBUG ServerConnector:396 - ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@4aac3fdd[HTTP/1.1]
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@775258a9,MANAGED}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@74c1afe6 added {ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@74c1afe6 added {spark.embeddedserver.jetty.JettyHandler@48ac1742,MANAGED}
+11-05-2017 12:06:55 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 12:06:55 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@74c1afe6
+11-05-2017 12:06:55 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 12:06:55 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@74c1afe6
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting qtp2113116610{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @487ms qtp2113116610{STARTED,8<=8<=200,i=4,q=0}
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@48ac1742
+11-05-2017 12:06:55 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@48ac1742
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@4891f6ba
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@4891f6ba added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1972b4e9,MANAGED}
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@11f5d5a8
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @496ms org.eclipse.jetty.server.session.HashSessionIdManager@11f5d5a8
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@74c1afe6 added {org.eclipse.jetty.server.session.HashSessionIdManager@11f5d5a8,MANAGED}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@4891f6ba added {org.eclipse.jetty.server.session.HashSessionIdManager@11f5d5a8,UNMANAGED}
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1972b4e9
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @499ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1972b4e9
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @501ms org.eclipse.jetty.server.session.HashSessionManager@4891f6ba
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @501ms spark.embeddedserver.jetty.JettyHandler@48ac1742
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@5d04e38f
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @508ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@5d04e38f
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@4aac3fdd[HTTP/1.1]
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @509ms HttpConnectionFactory@4aac3fdd[HTTP/1.1]
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@775258a9
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@6f2ab1 id=0 keys=-1 selected=-1
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @522ms org.eclipse.jetty.io.ManagedSelector@6f2ab1 id=0 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@6f2ab1 id=0 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@edc25b id=1 keys=-1 selected=-1
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@6f2ab1 id=0 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2250096f execute
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2250096f produce enter
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@2250096f producing
+11-05-2017 12:06:55 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @524ms org.eclipse.jetty.io.ManagedSelector@edc25b id=1 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@edc25b id=1 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@edc25b id=1 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@23999bdc execute
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@23999bdc produce enter
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@23999bdc producing
+11-05-2017 12:06:55 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@5821f549 id=2 keys=-1 selected=-1
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @528ms org.eclipse.jetty.io.ManagedSelector@5821f549 id=2 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@5821f549 id=2 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@65b45f42 id=3 keys=-1 selected=-1
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@5821f549 id=2 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@53405155 execute
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@53405155 produce enter
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@53405155 producing
+11-05-2017 12:06:55 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @530ms org.eclipse.jetty.io.ManagedSelector@65b45f42 id=3 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@65b45f42 id=3 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @531ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@775258a9
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@65b45f42 id=3 keys=0 selected=0
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1987b483 execute
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1987b483 produce enter
+11-05-2017 12:06:55 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1987b483 producing
+11-05-2017 12:06:55 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:06:55 DEBUG ContainerLifeCycle:323 - ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@555e4d62,POJO}
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:373 - queue acceptor-0@555e4d62
+11-05-2017 12:06:55 DEBUG QueuedThreadPool:571 - run acceptor-0@555e4d62
+11-05-2017 12:06:55 INFO  ServerConnector:270 - Started ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @533ms ServerConnector@2806997d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:06:55 INFO  Server:397 - Started @533ms
+11-05-2017 12:06:55 DEBUG AbstractLifeCycle:177 - STARTED @534ms org.eclipse.jetty.server.Server@74c1afe6
+11-05-2017 12:06:55 INFO  cluster:71 - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 12:06:56 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 12:06:57 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 12:06:57 INFO  cluster:76 - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 12:06:57 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:07:08 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 12:07:08 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:07:19 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 12:07:19 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:07:25 DEBUG session:347 - Scavenging sessions at 1494497245622
+11-05-2017 12:07:30 DEBUG connection:56 - Closing connection connectionId{localValue:4}
+11-05-2017 12:07:30 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:07:41 DEBUG connection:56 - Closing connection connectionId{localValue:5}
+11-05-2017 12:07:41 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:07:52 DEBUG connection:56 - Closing connection connectionId{localValue:6}
+11-05-2017 12:07:52 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:07:55 DEBUG session:347 - Scavenging sessions at 1494497275625
+11-05-2017 12:08:03 DEBUG connection:56 - Closing connection connectionId{localValue:7}
+11-05-2017 12:08:03 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:08:14 DEBUG connection:56 - Closing connection connectionId{localValue:8}
+11-05-2017 12:08:14 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:08:25 DEBUG connection:56 - Closing connection connectionId{localValue:9}
+11-05-2017 12:08:25 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:08:25 DEBUG session:347 - Scavenging sessions at 1494497305626
+11-05-2017 12:08:36 DEBUG connection:56 - Closing connection connectionId{localValue:10}
+11-05-2017 12:08:36 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:08:47 DEBUG connection:56 - Closing connection connectionId{localValue:11}
+11-05-2017 12:08:47 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:08:55 DEBUG session:347 - Scavenging sessions at 1494497335627
+11-05-2017 12:08:58 DEBUG connection:56 - Closing connection connectionId{localValue:12}
+11-05-2017 12:08:58 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:09:09 DEBUG connection:56 - Closing connection connectionId{localValue:13}
+11-05-2017 12:09:09 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:09:20 DEBUG connection:56 - Closing connection connectionId{localValue:14}
+11-05-2017 12:09:20 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:09:25 DEBUG session:347 - Scavenging sessions at 1494497365628
+11-05-2017 12:09:31 DEBUG connection:56 - Closing connection connectionId{localValue:15}
+11-05-2017 12:09:31 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:09:42 DEBUG connection:56 - Closing connection connectionId{localValue:16}
+11-05-2017 12:09:42 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:09:53 DEBUG connection:56 - Closing connection connectionId{localValue:17}
+11-05-2017 12:09:53 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:09:55 DEBUG session:347 - Scavenging sessions at 1494497395630
+11-05-2017 12:10:04 DEBUG connection:56 - Closing connection connectionId{localValue:18}
+11-05-2017 12:10:04 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:10:15 DEBUG connection:56 - Closing connection connectionId{localValue:19}
+11-05-2017 12:10:15 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:10:25 DEBUG session:347 - Scavenging sessions at 1494497425631
+11-05-2017 12:10:26 DEBUG connection:56 - Closing connection connectionId{localValue:20}
+11-05-2017 12:10:26 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:10:37 DEBUG connection:56 - Closing connection connectionId{localValue:21}
+11-05-2017 12:10:37 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 12:10:56 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 12:10:56 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 12:10:56 INFO  log:186 - Logging initialized @357ms
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@42d04c3d added {org.eclipse.jetty.server.session.HashSessionManager@61d4f897,AUTO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@39ad251 added {qtp1617612216{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@316762bc[HTTP/1.1] added {HttpConfiguration@795716fc{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@3dacc232]},POJO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@39ad251,UNMANAGED}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{null,[]}{0.0.0.0:0} added {qtp1617612216{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@d663911,AUTO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@1c3b7db0,POJO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@316762bc[HTTP/1.1],AUTO}
+11-05-2017 12:10:56 DEBUG ServerConnector:396 - ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@316762bc[HTTP/1.1]
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@2dab5eb2,MANAGED}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@39ad251 added {ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@39ad251 added {spark.embeddedserver.jetty.JettyHandler@42d04c3d,MANAGED}
+11-05-2017 12:10:56 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 12:10:56 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@39ad251
+11-05-2017 12:10:56 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 12:10:56 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@39ad251
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting qtp1617612216{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @423ms qtp1617612216{STARTED,8<=8<=200,i=6,q=0}
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@42d04c3d
+11-05-2017 12:10:56 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@42d04c3d
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@61d4f897
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@61d4f897 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@462fab22,MANAGED}
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@63b7e142
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @436ms org.eclipse.jetty.server.session.HashSessionIdManager@63b7e142
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@39ad251 added {org.eclipse.jetty.server.session.HashSessionIdManager@63b7e142,MANAGED}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@61d4f897 added {org.eclipse.jetty.server.session.HashSessionIdManager@63b7e142,UNMANAGED}
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@462fab22
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @439ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@462fab22
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @440ms org.eclipse.jetty.server.session.HashSessionManager@61d4f897
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @441ms spark.embeddedserver.jetty.JettyHandler@42d04c3d
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@d663911
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @445ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@d663911
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@316762bc[HTTP/1.1]
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @446ms HttpConnectionFactory@316762bc[HTTP/1.1]
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@2dab5eb2
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@3554e5f0 id=0 keys=-1 selected=-1
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @455ms org.eclipse.jetty.io.ManagedSelector@3554e5f0 id=0 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@3554e5f0 id=0 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@66798ad1 id=1 keys=-1 selected=-1
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@3554e5f0 id=0 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@262578c3 execute
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@262578c3 produce enter
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@262578c3 producing
+11-05-2017 12:10:56 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @457ms org.eclipse.jetty.io.ManagedSelector@66798ad1 id=1 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@66798ad1 id=1 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@6d538b46 id=2 keys=-1 selected=-1
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@66798ad1 id=1 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1d7a5379 execute
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1d7a5379 produce enter
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1d7a5379 producing
+11-05-2017 12:10:56 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @458ms org.eclipse.jetty.io.ManagedSelector@6d538b46 id=2 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@6d538b46 id=2 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@727a5031 id=3 keys=-1 selected=-1
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@6d538b46 id=2 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@13fd3e8 execute
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@13fd3e8 produce enter
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@13fd3e8 producing
+11-05-2017 12:10:56 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @460ms org.eclipse.jetty.io.ManagedSelector@727a5031 id=3 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@727a5031 id=3 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @460ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@2dab5eb2
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@727a5031 id=3 keys=0 selected=0
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@9c332eb execute
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@9c332eb produce enter
+11-05-2017 12:10:56 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@9c332eb producing
+11-05-2017 12:10:56 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:10:56 DEBUG ContainerLifeCycle:323 - ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@64084726,POJO}
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:373 - queue acceptor-0@64084726
+11-05-2017 12:10:56 DEBUG QueuedThreadPool:571 - run acceptor-0@64084726
+11-05-2017 12:10:56 INFO  ServerConnector:270 - Started ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @462ms ServerConnector@3d6a9161{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:10:56 INFO  Server:397 - Started @462ms
+11-05-2017 12:10:56 DEBUG AbstractLifeCycle:177 - STARTED @463ms org.eclipse.jetty.server.Server@39ad251
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 12:11:33 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 12:11:33 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 12:11:33 INFO  log:186 - Logging initialized @362ms
+11-05-2017 12:11:33 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@5fd48f71 added {org.eclipse.jetty.server.session.HashSessionManager@3ba473b0,AUTO}
+11-05-2017 12:11:33 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {qtp202441908{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@222f2319[HTTP/1.1] added {HttpConfiguration@1815a5d1{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@4b07bcdb]},POJO}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@6fb2adb3,UNMANAGED}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {qtp202441908{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86,AUTO}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@79489331,POJO}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@222f2319[HTTP/1.1],AUTO}
+11-05-2017 12:11:34 DEBUG ServerConnector:396 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d,MANAGED}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {spark.embeddedserver.jetty.JettyHandler@5fd48f71,MANAGED}
+11-05-2017 12:11:34 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 12:11:34 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 12:11:34 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 12:11:34 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting qtp202441908{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @442ms qtp202441908{STARTED,8<=8<=200,i=7,q=0}
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 12:11:34 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@3ba473b0
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@3ba473b0 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c,MANAGED}
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @449ms org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2,MANAGED}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@3ba473b0 added {org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2,UNMANAGED}
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @452ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @453ms org.eclipse.jetty.server.session.HashSessionManager@3ba473b0
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @453ms spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @459ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @460ms HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=-1 selected=-1
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @472ms org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=-1 selected=-1
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @474ms org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=-1 selected=-1
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@73475ecc execute
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51428c4d execute
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51428c4d produce enter
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51428c4d producing
+11-05-2017 12:11:34 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@73475ecc produce enter
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @476ms org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@73475ecc producing
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=-1 selected=-1
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@5b43015c execute
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@5b43015c produce enter
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@5b43015c producing
+11-05-2017 12:11:34 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @479ms org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @479ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@35740a91 execute
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@35740a91 produce enter
+11-05-2017 12:11:34 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@35740a91 producing
+11-05-2017 12:11:34 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:11:34 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@7f3b81dc,POJO}
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:373 - queue acceptor-0@7f3b81dc
+11-05-2017 12:11:34 DEBUG QueuedThreadPool:571 - run acceptor-0@7f3b81dc
+11-05-2017 12:11:34 INFO  ServerConnector:270 - Started ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @481ms ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:11:34 INFO  Server:397 - Started @481ms
+11-05-2017 12:11:34 DEBUG AbstractLifeCycle:177 - STARTED @482ms org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 12:11:34 INFO  cluster:71 - Cluster created with settings {hosts=[127.0.0.2:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 12:11:34 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.2:27017, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 12:11:35 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 12:11:35 INFO  cluster:76 - Exception in monitor thread while connecting to server 127.0.0.2:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 12:11:35 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.2:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:11:46 DEBUG connection:56 - Closing connection connectionId{localValue:2}
+11-05-2017 12:11:46 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.2:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:11:57 DEBUG connection:56 - Closing connection connectionId{localValue:3}
+11-05-2017 12:11:57 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.2:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@25618e91
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@34033bd0
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@17d99928
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@1ae369b7
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@34340fab
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@2b80d80f
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@2eee9593
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@546a03af
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@28864e92
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@6ad5c04e
+11-05-2017 12:12:08 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@725bef66
+11-05-2017 12:12:08 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+11-05-2017 12:12:08 INFO  log:186 - Logging initialized @388ms
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@5fd48f71 added {org.eclipse.jetty.server.session.HashSessionManager@3ba473b0,AUTO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {qtp202441908{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@222f2319[HTTP/1.1] added {HttpConfiguration@1815a5d1{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@4b07bcdb]},POJO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@6fb2adb3,UNMANAGED}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {qtp202441908{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86,AUTO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@79489331,POJO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@222f2319[HTTP/1.1],AUTO}
+11-05-2017 12:12:08 DEBUG ServerConnector:396 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d,MANAGED}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {spark.embeddedserver.jetty.JettyHandler@5fd48f71,MANAGED}
+11-05-2017 12:12:08 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+11-05-2017 12:12:08 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 12:12:08 INFO  Server:345 - jetty-9.3.6.v20151106
+11-05-2017 12:12:08 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting qtp202441908{STOPPED,8<=0<=200,i=0,q=0}
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @471ms qtp202441908{STARTED,8<=8<=200,i=4,q=0}
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 12:12:08 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@3ba473b0
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@3ba473b0 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c,MANAGED}
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @479ms org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@6fb2adb3 added {org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2,MANAGED}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@3ba473b0 added {org.eclipse.jetty.server.session.HashSessionIdManager@229e13b2,UNMANAGED}
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @481ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40ff0d7c
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @483ms org.eclipse.jetty.server.session.HashSessionManager@3ba473b0
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @483ms spark.embeddedserver.jetty.JettyHandler@5fd48f71
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @489ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@1526cd86
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @490ms HttpConnectionFactory@222f2319[HTTP/1.1]
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=-1 selected=-1
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @506ms org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=-1 selected=-1
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@da829dd id=0 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@4b5cdeb0 execute
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@4b5cdeb0 produce enter
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@4b5cdeb0 producing
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @508ms org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=-1 selected=-1
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @511ms org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=-1 selected=-1
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @514ms org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @515ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1f863b9d
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@f4849e8 id=1 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1bfd8f28 execute
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1bfd8f28 produce enter
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1bfd8f28 producing
+11-05-2017 12:12:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@217af5f8 id=3 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ba6403 execute
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ba6403 produce enter
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@1d932f7b id=2 keys=0 selected=0
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@74da9ef3 execute
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ba6403 producing
+11-05-2017 12:12:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@74da9ef3 produce enter
+11-05-2017 12:12:08 DEBUG ContainerLifeCycle:323 - ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@7f3b81dc,POJO}
+11-05-2017 12:12:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@74da9ef3 producing
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:373 - queue acceptor-0@7f3b81dc
+11-05-2017 12:12:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+11-05-2017 12:12:08 INFO  ServerConnector:270 - Started ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:12:08 DEBUG QueuedThreadPool:571 - run acceptor-0@7f3b81dc
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @519ms ServerConnector@6c3e409d{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+11-05-2017 12:12:08 INFO  Server:397 - Started @519ms
+11-05-2017 12:12:08 DEBUG AbstractLifeCycle:177 - STARTED @520ms org.eclipse.jetty.server.Server@6fb2adb3
+11-05-2017 12:12:09 INFO  cluster:71 - Cluster created with settings {hosts=[127.0.1.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11-05-2017 12:12:09 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.1.1:27017, type=UNKNOWN, state=CONNECTING}]
+11-05-2017 12:12:10 DEBUG connection:56 - Closing connection connectionId{localValue:1}
+11-05-2017 12:12:10 INFO  cluster:76 - Exception in monitor thread while connecting to server 127.0.1.1:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 more
+11-05-2017 12:12:10 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.1.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused: connect}}]
