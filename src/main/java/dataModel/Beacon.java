@@ -37,7 +37,7 @@ public class Beacon {
     }
 
     public DBObject getBeaconMongoBDObject() {
-        return new BasicDBObject("_id", name)
+        return new BasicDBObject()
                 .append("name", name)
                 .append("color", color)
                 .append("coordinates", coordinates.getCoordinatesMongoBDObject());

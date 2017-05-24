@@ -1,3 +1,4 @@
+import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import org.apache.log4j.PropertyConfigurator;
@@ -16,7 +17,8 @@ public class BuzzDroidsServer {
 
     public static void main(String[] args) {
         MongoClient mongoClient = new MongoClient("172.17.0.2", 27017);
-        MongoDatabase database = mongoClient.getDatabase("mydb");
+//        MongoDatabase database = mongoClient.getDatabase("mydb");
+        DB database = mongoClient.getDB("mydb");
 
         PropertyConfigurator.configure(BuzzDroidsServer.class.getResource(LOG_PROPERTIES_FILE));
         port(SERVER_PORT);

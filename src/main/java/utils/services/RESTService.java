@@ -1,5 +1,6 @@
 package utils.services;
 
+import com.mongodb.DB;
 import com.mongodb.client.MongoDatabase;
 import spark.Spark;
 
@@ -15,7 +16,7 @@ import static utils.services.FlightService.*;
 
 public class RESTService {
 
-    public static void restMethods(String contentType, MongoDatabase database) {
+    public static void restMethods(String contentType, DB database) {
 
         after((req, res) -> res.type(contentType));
 

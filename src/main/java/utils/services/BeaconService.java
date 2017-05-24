@@ -2,6 +2,7 @@ package utils.services;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.client.FindIterable;
@@ -25,9 +26,9 @@ public class BeaconService {
         return null;
     }
 
-    public static List<Beacon> getBeaconList(MongoDatabase database) {
-        MongoCollection collection = database.getCollection("beacons");
-        MongoCursor<Document> cursor = collection.find().iterator();
+    public static List<Beacon> getBeaconList(DB database) {
+        DBCollection collection = database.getCollection("beacons");
+        DBCursor cursor = collection.find();
         List<Beacon> beacons = new ArrayList<>();
 
         while (cursor.hasNext()) {
@@ -37,20 +38,20 @@ public class BeaconService {
         return beacons;
     }
 
-    public static Beacon saveBeacon(MongoDatabase database, String body) {
+    public static Beacon saveBeacon(DB database, String body) {
         Beacon beacon = new Gson().fromJson(body, Beacon.class);
-        MongoCollection collection = database.getCollection("beacons");
-        collection.insertOne(beacon.getBeaconMongoBDObject());
+        DBCollection collection = database.getCollection("beacons");
+        collection.insert(beacon.getBeaconMongoBDObject());
         return beacon;
     }
 
-    public static List<Beacon> saveBeaconList(MongoDatabase database, String body) {
+    public static List<Beacon> saveBeaconList(DB database, String body) {
         Type listType = new TypeToken<ArrayList<Beacon>>(){}.getType();
         List<Beacon> beacons = new Gson().fromJson(body, listType);
-        MongoCollection collection = database.getCollection("beacons");
+        DBCollection collection = database.getCollection("beacons");
 
         for(Beacon beacon : beacons) {
-            collection.insertOne(beacon.getBeaconMongoBDObject());
+            collection.insert(beacon.getBeaconMongoBDObject());
         }
 
         return beacons;
