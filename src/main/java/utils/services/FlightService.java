@@ -1,6 +1,7 @@
 package utils.services;
 
 import com.google.gson.Gson;
+import com.mongodb.client.MongoDatabase;
 import dataModel.FlightArea;
 
 /**
@@ -9,11 +10,11 @@ import dataModel.FlightArea;
 
 public class FlightService {
 
-    public static FlightArea getFlightArea() {
+    public static FlightArea getFlightArea(MongoDatabase database) {
         return null;
     }
 
-    public static FlightArea saveFlightArea(String body) {
+    public static FlightArea saveFlightArea(MongoDatabase database, String body) {
         FlightArea flightArea = new Gson().fromJson(body, FlightArea.class);
         return flightArea;
     }

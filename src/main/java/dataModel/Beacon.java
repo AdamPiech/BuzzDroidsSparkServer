@@ -1,5 +1,8 @@
 package dataModel;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 /**
  * Created by Adam Piech on 2017-05-08.
  */
@@ -31,6 +34,13 @@ public class Beacon {
 
     public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public DBObject getBeaconMongoBDObject() {
+        return new BasicDBObject("_id", name)
+                .append("name", name)
+                .append("color", color)
+                .append("coordinates", coordinates.getCoordinatesMongoBDObject());
     }
 
 }

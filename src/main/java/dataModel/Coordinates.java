@@ -1,5 +1,8 @@
 package dataModel;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 /**
  * Created by Adam Piech on 2017-05-08.
  */
@@ -23,6 +26,12 @@ public class Coordinates {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+
+    public DBObject getCoordinatesMongoBDObject() {
+        return new BasicDBObject()
+                .append("latitude", latitude)
+                .append("longitude", longitude);
     }
 
 }
