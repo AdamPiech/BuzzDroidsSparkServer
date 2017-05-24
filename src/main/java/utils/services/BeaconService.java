@@ -2,9 +2,7 @@ package utils.services;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
+import com.mongodb.*;
 import dataModel.Beacon;
 
 import java.lang.reflect.Type;
@@ -36,7 +34,14 @@ public class BeaconService {
     public static Beacon saveBeacon(DB database, String body) {
         Beacon beacon = new Gson().fromJson(body, Beacon.class);
         DBCollection collection = database.getCollection("beacons");
-        collection.insert(beacon.getBeaconMongoBDObject());
+
+        DBObject query = new BasicDBObject("_id", beacon.getName());
+        if (collection.find(query).size() == 0) {
+            collection.insert(beacon.getBeaconMongoBDObject());
+        } else {
+            collection.update(query, beacon.getBeaconMongoBDObject());
+        }
+
         return beacon;
     }
 
@@ -46,7 +51,12 @@ public class BeaconService {
         DBCollection collection = database.getCollection("beacons");
 
         for(Beacon beacon : beacons) {
-            collection.insert(beacon.getBeaconMongoBDObject());
+            DBObject query = new BasicDBObject("_id", beacon.getName());
+            if (collection.find(query).size() == 0) {
+                collection.insert(beacon.getBeaconMongoBDObject());
+            } else {
+                collection.update(query, beacon.getBeaconMongoBDObject());
+            }
         }
 
         return beacons;
