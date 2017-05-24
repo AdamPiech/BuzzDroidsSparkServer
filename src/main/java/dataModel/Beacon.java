@@ -38,6 +38,7 @@ public class Beacon {
 
     public DBObject getBeaconMongoBDObject() {
         return new BasicDBObject()
+                .append("_id", name)
                 .append("name", name)
                 .append("color", color)
                 .append("coordinates", coordinates.getCoordinatesMongoBDObject());

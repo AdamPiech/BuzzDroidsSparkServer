@@ -5,12 +5,7 @@ import com.google.gson.Gson;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoCursor;
-import com.mongodb.client.MongoDatabase;
 import dataModel.Beacon;
-import org.bson.Document;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -52,6 +47,19 @@ public class BeaconService {
 
         for(Beacon beacon : beacons) {
             collection.insert(beacon.getBeaconMongoBDObject());
+        }
+
+        return beacons;
+    }
+
+    public static List<Beacon> removeAllBeacons(DB database) {
+        DBCollection collection = database.getCollection("beacons");
+        DBCursor cursor = collection.find();
+        List<Beacon> beacons = new ArrayList<>();
+
+        while (cursor.hasNext()) {
+            collection.remove(cursor.getQuery());
+            beacons.add(new Gson().fromJson(cursor.next().toString(), Beacon.class));
         }
 
         return beacons;
