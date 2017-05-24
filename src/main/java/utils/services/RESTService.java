@@ -1,7 +1,6 @@
 package utils.services;
 
 import com.mongodb.DB;
-import com.mongodb.client.MongoDatabase;
 import spark.Spark;
 
 import static spark.Spark.after;
@@ -20,19 +19,20 @@ public class RESTService {
 
         after((req, res) -> res.type(contentType));
 
-        Spark.get("/beacon/list", (req, res) -> getBeaconList(database), toJson());
-        Spark.get("/drones/location", (req, res) -> getDronesLocation(database), toJson());
-        Spark.get("/drones/path", (req, res) -> getDronesPaths(database), toJson());
-        Spark.get("/flight/area", (req, res) -> getFlightArea(database), toJson());
+        Spark.get("/beacon/list", (req, res) -> getBeaconList(database), toJson()); // +
+        Spark.get("/drone/location", (req, res) -> getDronesLocations(database), toJson()); // +
+        Spark.get("/drone/path", (req, res) -> getDronesPaths(database), toJson());
+//        Spark.get("/flight/area", (req, res) -> getFlightArea(database), toJson());
         Spark.get("/help/area", (req, res) -> "/* TODO: algorytm wyznaczania ścieżki */", toJson());
 
-        Spark.post("/beacon", (req, res) -> saveBeacon(database, req.body()), toJson());
-        Spark.post("/beacon/list", (req, res) -> saveBeaconList(database, req.body()), toJson());
-        Spark.post("/drone/location", (req, res) -> saveDroneLocation(database, req.body()), toJson());
-        Spark.post("/drone/path", (req, res) -> saveDronePath(database, req.body()), toJson());
+        Spark.post("/beacon", (req, res) -> saveBeacon(database, req.body()), toJson()); // +
+        Spark.post("/beacon/list", (req, res) -> saveBeaconList(database, req.body()), toJson()); // +
+        Spark.post("/drone/location", (req, res) -> saveDroneLocation(database, req.body()), toJson()); // +
+//        Spark.post("/drone/path", (req, res) -> saveDronePath(database, req.body()), toJson());
         Spark.post("/flight/area", (req, res) -> saveFlightArea(database, req.body()), toJson());
 
-        Spark.delete("/beacon/reset", (req, res) -> removeAllBeacons(database), toJson());
+        Spark.delete("/beacon/reset", (req, res) -> removeAllBeacons(database), toJson()); // +
+        Spark.delete("/drones/location/reset", (req, res) -> removeDronesLocations(database), toJson()); // +
 
     }
 

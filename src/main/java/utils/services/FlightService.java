@@ -2,7 +2,6 @@ package utils.services;
 
 import com.google.gson.Gson;
 import com.mongodb.DB;
-import com.mongodb.client.MongoDatabase;
 import dataModel.FlightArea;
 
 /**

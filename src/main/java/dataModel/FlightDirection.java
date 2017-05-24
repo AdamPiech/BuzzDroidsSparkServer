@@ -1,5 +1,8 @@
 package dataModel;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 /**
  * Created by Adam Piech on 2017-05-10.
  */
@@ -24,4 +27,9 @@ public class FlightDirection {
         this.coordinates = coordinates;
     }
 
+    public DBObject getFlightDirectionMongoBDObject() {
+        return new BasicDBObject()
+                .append("nextPointName", nextPointName)
+                .append("coordinates", coordinates.getCoordinatesMongoBDObject());
+    }
 }

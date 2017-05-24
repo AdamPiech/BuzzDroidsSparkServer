@@ -1,5 +1,8 @@
 package dataModel;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 /**
  * Created by Adam Piech on 2017-05-10.
  */
@@ -32,6 +35,13 @@ public class DroneLocation {
 
     public void setFlightDirection(FlightDirection flightDirection) {
         this.flightDirection = flightDirection;
+    }
+
+    public DBObject getDroneLocationMongoBDObject() {
+        return new BasicDBObject("_id", droneName)
+                .append("droneName", droneName)
+                .append("coordinates", coordinates.getCoordinatesMongoBDObject())
+                .append("flightDirection", flightDirection.getFlightDirectionMongoBDObject());
     }
 
 }

@@ -8595,3 +8595,97 @@ Caused by: java.net.ConnectException: Connection refused: connect
 24-05-2017 16:05:16 DEBUG AbstractLifeCycle:177 - STARTED @3485ms ServerConnector@38f2e5af{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
 24-05-2017 16:05:16 INFO  Server:397 - Started @3486ms
 24-05-2017 16:05:16 DEBUG AbstractLifeCycle:177 - STARTED @3486ms org.eclipse.jetty.server.Server@5db47842
+24-05-2017 16:11:07 INFO  cluster:71 - Cluster created with settings {hosts=[172.17.0.2:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+24-05-2017 16:11:07 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=172.17.0.2:27017, type=UNKNOWN, state=CONNECTING}]
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: after, +/*paths, spark.FilterImpl$1@6d3af739
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: get, /beacon/list, spark.ResponseTransformerRouteImpl$1@1068e947
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: get, /drones/location, spark.ResponseTransformerRouteImpl$1@aecb35a
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: get, /drones/path, spark.ResponseTransformerRouteImpl$1@8b87145
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: get, /flight/area, spark.ResponseTransformerRouteImpl$1@b9afc07
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: get, /help/area, spark.ResponseTransformerRouteImpl$1@73d4cc9e
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: post, /beacon, spark.ResponseTransformerRouteImpl$1@5427c60c
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: post, /beacon/list, spark.ResponseTransformerRouteImpl$1@543e710e
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: post, /drone/location, spark.ResponseTransformerRouteImpl$1@3d0f8e03
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: post, /drone/path, spark.ResponseTransformerRouteImpl$1@44f75083
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: post, /flight/area, spark.ResponseTransformerRouteImpl$1@43d7741f
+24-05-2017 16:11:08 DEBUG Routes:187 - Adds route: delete, /beacon/reset, spark.ResponseTransformerRouteImpl$1@69379752
+24-05-2017 16:11:08 DEBUG log:176 - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+24-05-2017 16:11:08 INFO  log:186 - Logging initialized @1868ms
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - spark.embeddedserver.jetty.JettyHandler@1e3bc562 added {org.eclipse.jetty.server.session.HashSessionManager@6873db4d,AUTO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@311f7fe3 added {qtp1932106266{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - HttpConnectionFactory@260a9847[HTTP/1.1] added {HttpConfiguration@26df98f9{32768/8192,8192/8192,https://:0,[ForwardedRequestCustomizer@27b037fd]},POJO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@311f7fe3,UNMANAGED}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{null,[]}{0.0.0.0:0} added {qtp1932106266{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40039828,AUTO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@561bb559,POJO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@260a9847[HTTP/1.1],AUTO}
+24-05-2017 16:11:08 DEBUG ServerConnector:396 - ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@260a9847[HTTP/1.1]
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@52a4053a,MANAGED}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@311f7fe3 added {ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:9000},AUTO}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@311f7fe3 added {spark.embeddedserver.jetty.JettyHandler@1e3bc562,MANAGED}
+24-05-2017 16:11:08 INFO  EmbeddedJettyServer:126 - == Spark has ignited ...
+24-05-2017 16:11:08 INFO  EmbeddedJettyServer:127 - >> Listening on 0.0.0.0:9000
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.Server@311f7fe3
+24-05-2017 16:11:08 INFO  Server:345 - jetty-9.3.6.v20151106
+24-05-2017 16:11:08 DEBUG AbstractHandler:58 - starting org.eclipse.jetty.server.Server@311f7fe3
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting qtp1932106266{STOPPED,8<=0<=200,i=0,q=0}
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1939ms qtp1932106266{STARTED,8<=8<=200,i=6,q=0}
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting spark.embeddedserver.jetty.JettyHandler@1e3bc562
+24-05-2017 16:11:08 DEBUG AbstractHandler:58 - starting spark.embeddedserver.jetty.JettyHandler@1e3bc562
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionManager@6873db4d
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@6873db4d added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3eb9df73,MANAGED}
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.session.HashSessionIdManager@da18030
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1948ms org.eclipse.jetty.server.session.HashSessionIdManager@da18030
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.Server@311f7fe3 added {org.eclipse.jetty.server.session.HashSessionIdManager@da18030,MANAGED}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - org.eclipse.jetty.server.session.HashSessionManager@6873db4d added {org.eclipse.jetty.server.session.HashSessionIdManager@da18030,UNMANAGED}
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3eb9df73
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1949ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@3eb9df73
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1951ms org.eclipse.jetty.server.session.HashSessionManager@6873db4d
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1951ms spark.embeddedserver.jetty.JettyHandler@1e3bc562
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:9000],POJO}
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40039828
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1959ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@40039828
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting HttpConnectionFactory@260a9847[HTTP/1.1]
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1959ms HttpConnectionFactory@260a9847[HTTP/1.1]
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@52a4053a
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@78c9fb61 id=0 keys=-1 selected=-1
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1986ms org.eclipse.jetty.io.ManagedSelector@78c9fb61 id=0 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@78c9fb61 id=0 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@a6269a7 id=1 keys=-1 selected=-1
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@78c9fb61 id=0 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@70fea5b9 execute
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@70fea5b9 produce enter
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@70fea5b9 producing
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1989ms org.eclipse.jetty.io.ManagedSelector@a6269a7 id=1 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@a6269a7 id=1 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@3a9d455 id=2 keys=-1 selected=-1
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@a6269a7 id=1 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@54c3abd4 execute
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@54c3abd4 produce enter
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@54c3abd4 producing
+24-05-2017 16:11:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1991ms org.eclipse.jetty.io.ManagedSelector@3a9d455 id=2 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@3a9d455 id=2 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@3a9d455 id=2 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:185 - starting org.eclipse.jetty.io.ManagedSelector@54af652c id=3 keys=-1 selected=-1
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@24a0b5a2 execute
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@24a0b5a2 produce enter
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@24a0b5a2 producing
+24-05-2017 16:11:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1992ms org.eclipse.jetty.io.ManagedSelector@54af652c id=3 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:373 - queue org.eclipse.jetty.io.ManagedSelector@54af652c id=3 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1993ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@52a4053a
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:571 - run org.eclipse.jetty.io.ManagedSelector@54af652c id=3 keys=0 selected=0
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:76 - EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@367edd83 execute
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:154 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@367edd83 produce enter
+24-05-2017 16:11:08 DEBUG ExecuteProduceConsume:160 - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@367edd83 producing
+24-05-2017 16:11:08 DEBUG ManagedSelector:231 - Selector loop waiting on select
+24-05-2017 16:11:08 DEBUG ContainerLifeCycle:323 - ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:9000} added {acceptor-0@47ceb2ce,POJO}
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:373 - queue acceptor-0@47ceb2ce
+24-05-2017 16:11:08 DEBUG QueuedThreadPool:571 - run acceptor-0@47ceb2ce
+24-05-2017 16:11:08 INFO  ServerConnector:270 - Started ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1995ms ServerConnector@4ec6b84a{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+24-05-2017 16:11:08 INFO  Server:397 - Started @1996ms
+24-05-2017 16:11:08 DEBUG AbstractLifeCycle:177 - STARTED @1996ms org.eclipse.jetty.server.Server@311f7fe3
