@@ -1,11 +1,12 @@
 package utils.services;
 
 import com.google.gson.Gson;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBObject;
+import com.mongodb.*;
+import dataModel.DronePath;
 import dataModel.FlightArea;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Adam Piech on 2017-05-10.
@@ -26,6 +27,19 @@ public class FlightService {
         }
 
         return flightArea;
+    }
+
+    public static List<FlightArea> removeFlightArea(DB database) {
+        DBCollection collection = database.getCollection("flight_area");
+        DBCursor cursor = collection.find();
+        List<FlightArea> flightAreas = new ArrayList<>();
+
+        while (cursor.hasNext()) {
+            collection.remove(cursor.getQuery());
+            flightAreas.add(new Gson().fromJson(cursor.next().toString(), FlightArea.class));
+        }
+
+        return flightAreas;
     }
 
 }
