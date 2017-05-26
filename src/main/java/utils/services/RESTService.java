@@ -32,8 +32,9 @@ public class RESTService {
         Spark.post("/flight/area", (req, res) -> saveFlightArea(database, req.body()), toJson());
 
         Spark.delete("/beacon/reset", (req, res) -> removeAllBeacons(database), toJson()); // +
-        Spark.delete("/drones/location/reset", (req, res) -> removeDronesLocations(database), toJson()); // +
-
+        Spark.delete("/drone/location/reset", (req, res) -> removeDronesLocations(database), toJson()); // +
+//        Spark.delete("/drone/path/reset", (req, res) -> , toJson());
+//        Spark.delete("/drone/flight/area", (req, res) -> , toJson());
     }
 
 }

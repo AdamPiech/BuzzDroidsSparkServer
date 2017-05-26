@@ -47,6 +47,15 @@ public class DroneService {
 
     public static DronePath saveDronePath(DB database, String body) {
         DronePath dronePath = new Gson().fromJson(body, DronePath.class);
+        DBCollection collection = database.getCollection("drones");
+
+        DBObject query = new BasicDBObject("_id", dronePath.getDroneName());
+        if (collection.find(query).size() == 0) {
+            collection.insert(dronePath.getDronePathMongoBDObject());
+        } else {
+            collection.update(query, dronePath.getDronePathMongoBDObject());
+        }
+
         return dronePath;
     }
 

@@ -1,5 +1,8 @@
 package dataModel;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 /**
  * Created by Adam Piech on 2017-05-10.
  */
@@ -32,6 +35,13 @@ public class PointLocation {
 
     public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public DBObject getPointLocationMongoBDObject() {
+        return new BasicDBObject()
+                .append("pointName", pointName)
+                .append("order", order)
+                .append("coordinates", coordinates.getCoordinatesMongoBDObject());
     }
 
 }
