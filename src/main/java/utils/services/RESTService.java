@@ -21,18 +21,18 @@ public class RESTService {
 
         Spark.get("/beacon/list", (req, res) -> getBeaconList(database), toJson());
         Spark.get("/drone/location", (req, res) -> getDronesLocations(database), toJson());
-        Spark.get("/drone/path", (req, res) -> getDronesPaths(database), toJson()); // CHECK!
+        Spark.get("/drone/path", (req, res) -> getDronesPaths(database), toJson());
         Spark.get("/help/area", (req, res) -> "/* TODO: algorytm wyznaczania ścieżki */", toJson()); // TODO
 
         Spark.post("/beacon", (req, res) -> saveBeacon(database, req.body()), toJson());
         Spark.post("/beacon/list", (req, res) -> saveBeaconList(database, req.body()), toJson());
         Spark.post("/drone/location", (req, res) -> saveDroneLocation(database, req.body()), toJson());
-        Spark.post("/flight/area", (req, res) -> saveFlightArea(database, req.body()), toJson()); // CHECK!
+        Spark.post("/flight/area", (req, res) -> saveFlightArea(database, req.body()), toJson());
 
         Spark.delete("/beacon/reset", (req, res) -> removeAllBeacons(database), toJson());
         Spark.delete("/drone/location/reset", (req, res) -> removeDronesLocations(database), toJson());
         Spark.delete("/drone/path/reset", (req, res) -> removeDronesPaths(database), toJson());
-        Spark.delete("/drone/flight/area", (req, res) -> removeFlightArea(database), toJson());
+        Spark.delete("/flight/area/reset", (req, res) -> removeFlightArea(database), toJson());
     }
 
 }
