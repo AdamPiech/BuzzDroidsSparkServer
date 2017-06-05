@@ -65,6 +65,19 @@ public class DroneService {
         return dronePaths;
     }
 
+    public static DronePath saveDronePath(DB database, DronePath dronePath) {
+        DBCollection collection = database.getCollection("drone_path");
+
+        DBObject query = new BasicDBObject("_id", dronePath.getDroneName());
+        if (collection.find(query).size() == 0) {
+            collection.insert(dronePath.getDronePathMongoBDObject());
+        } else {
+            collection.update(query, dronePath.getDronePathMongoBDObject());
+        }
+
+        return dronePath;
+    }
+
     public static List<DronePath> removeDronesPaths(DB database) {
         DBCollection collection = database.getCollection("drone_path");
         DBCursor cursor = collection.find();

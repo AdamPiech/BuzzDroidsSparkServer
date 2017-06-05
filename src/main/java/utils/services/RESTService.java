@@ -12,7 +12,6 @@ import static utils.services.FlightService.*;
 /**
  * Created by Adam Piech on 2017-05-11.
  */
-
 public class RESTService {
 
     public static void restMethods(String contentType, DB database) {
@@ -22,7 +21,6 @@ public class RESTService {
         Spark.get("/beacon/list", (req, res) -> getBeaconList(database), toJson());
         Spark.get("/drone/location", (req, res) -> getDronesLocations(database), toJson());
         Spark.get("/drone/path", (req, res) -> getDronesPaths(database), toJson());
-        Spark.get("/help/area", (req, res) -> "/* TODO: algorytm wyznaczania ścieżki */", toJson()); // TODO
 
         Spark.post("/beacon", (req, res) -> saveBeacon(database, req.body()), toJson());
         Spark.post("/beacon/list", (req, res) -> saveBeaconList(database, req.body()), toJson());

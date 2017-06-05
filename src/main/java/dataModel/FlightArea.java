@@ -15,7 +15,6 @@ public class FlightArea {
 
     private double pathResolution;
     private List<PointLocation> fullFlightArea;
-    private List<FlightAreaPart> flightAreaParts;
 
     public double getPathResolution() {
         return pathResolution;
@@ -33,14 +32,6 @@ public class FlightArea {
         this.fullFlightArea = fullFlightArea;
     }
 
-    public List<FlightAreaPart> getFlightAreaParts() {
-        return flightAreaParts;
-    }
-
-    public void setFlightAreaParts(List<FlightAreaPart> flightAreaParts) {
-        this.flightAreaParts = flightAreaParts;
-    }
-
     public DBObject getFlightAreaMongoBDObject() {
         return new BasicDBObject("_id", "flight_area")
                 .append("pathResolution", pathResolution)
@@ -48,11 +39,6 @@ public class FlightArea {
                         .addAll(fullFlightArea
                                 .stream()
                                 .map(p -> p.getPointLocationMongoBDObject())
-                                .collect(Collectors.toList()))) //Możliwe że trzeba dodać typ
-                .append("flightAreaParts", new BasicDBList()
-                        .addAll(flightAreaParts
-                                .stream()
-                                .map(p -> p.getFlightAreaPartMongoBDObject())
                                 .collect(Collectors.toList()))); //Możliwe że trzeba dodać typ
     }
 

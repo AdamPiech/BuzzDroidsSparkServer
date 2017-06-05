@@ -13,6 +13,12 @@ public class PointLocation {
     private int order;
     private Coordinates coordinates;
 
+    public PointLocation(String pointName, int order, Coordinates coordinates) {
+        this.pointName = pointName;
+        this.order = order;
+        this.coordinates = coordinates;
+    }
+
     public String getPointName() {
         return pointName;
     }

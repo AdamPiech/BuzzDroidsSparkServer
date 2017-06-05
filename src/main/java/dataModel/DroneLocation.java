@@ -11,7 +11,7 @@ public class DroneLocation {
 
     private String droneName;
     private Coordinates coordinates;
-    private FlightDirection flightDirection;
+    private Coordinates flightDirection;
 
     public String getDroneName() {
         return droneName;
@@ -29,11 +29,11 @@ public class DroneLocation {
         this.coordinates = coordinates;
     }
 
-    public FlightDirection getFlightDirection() {
+    public Coordinates getFlightDirection() {
         return flightDirection;
     }
 
-    public void setFlightDirection(FlightDirection flightDirection) {
+    public void setFlightDirection(Coordinates flightDirection) {
         this.flightDirection = flightDirection;
     }
 
@@ -41,7 +41,7 @@ public class DroneLocation {
         return new BasicDBObject("_id", droneName)
                 .append("droneName", droneName)
                 .append("coordinates", coordinates.getCoordinatesMongoBDObject())
-                .append("flightDirection", flightDirection.getFlightDirectionMongoBDObject());
+                .append("flightDirection", coordinates.getCoordinatesMongoBDObject());
     }
 
 }

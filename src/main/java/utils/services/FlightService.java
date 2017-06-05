@@ -2,8 +2,10 @@ package utils.services;
 
 import com.google.gson.Gson;
 import com.mongodb.*;
+import dataModel.DroneLocation;
 import dataModel.DronePath;
 import dataModel.FlightArea;
+import utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +16,18 @@ import java.util.List;
 
 public class FlightService {
 
+    public static FlightArea getDeafaultFlightArea() {
+        FlightArea flightArea = new FlightArea();
+        flightArea.setPathResolution(Utils.PATH_RESOLUTIONS);
+        flightArea.setFullFlightArea(Utils.getFlightArea());
+        return flightArea;
+    }
+
+    public static FlightArea getFlightArea(DB database) {
+        DBCollection collection = database.getCollection("flight_area");
+        DBCursor cursor = collection.find();
+        return new Gson().fromJson(cursor.next().toString(), FlightArea.class);
+    }
 
     public static FlightArea saveFlightArea(DB database, String body) {
         FlightArea flightArea = new Gson().fromJson(body, FlightArea.class);

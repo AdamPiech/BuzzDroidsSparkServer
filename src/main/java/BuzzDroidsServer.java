@@ -4,7 +4,7 @@ import org.apache.log4j.PropertyConfigurator;
 import utils.services.RESTService;
 
 import static spark.Spark.*;
-import static utils.States.*;
+import static utils.Utils.*;
 
 /**
  * Created by Adam Piech on 2017-05-04.
