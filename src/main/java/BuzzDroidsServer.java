@@ -12,8 +12,6 @@ import static utils.Utils.*;
 
 public class BuzzDroidsServer {
 
-//    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern(TIME_FORMAT);
-
     public static void main(String[] args) {
         PropertyConfigurator.configure(BuzzDroidsServer.class.getResource(LOG_PROPERTIES_FILE));
 
