@@ -8,6 +8,8 @@ import dataModel.DronePath;
 import java.util.ArrayList;
 import java.util.List;
 
+import static utils.Utils.*;
+
 /**
  * Created by Adam Piech on 2017-05-10.
  */
@@ -15,7 +17,7 @@ import java.util.List;
 public class DroneService {
 
     public static List<DroneLocation> getDronesLocations(DB database) {
-        DBCollection collection = database.getCollection("drone_location");
+        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_LOCATION);
         DBCursor cursor = collection.find();
         List<DroneLocation> droneLocations = new ArrayList<>();
 
@@ -28,9 +30,9 @@ public class DroneService {
 
     public static DroneLocation saveDroneLocation(DB database, String body) {
         DroneLocation droneLocation = new Gson().fromJson(body, DroneLocation.class);
-        DBCollection collection = database.getCollection("drone_location");
+        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_LOCATION);
 
-        DBObject query = new BasicDBObject("_id", droneLocation.getDroneName());
+        DBObject query = new BasicDBObject(DB_ID, droneLocation.getDroneName());
         if (collection.find(query).size() == 0) {
             collection.insert(droneLocation.getDroneLocationMongoBDObject());
         } else {
@@ -41,7 +43,7 @@ public class DroneService {
     }
 
     public static List<DroneLocation> removeDronesLocations(DB database) {
-        DBCollection collection = database.getCollection("drone_location");
+        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_LOCATION);
         DBCursor cursor = collection.find();
         List<DroneLocation> droneLocations = new ArrayList<>();
 
@@ -54,7 +56,7 @@ public class DroneService {
     }
 
     public static List<DronePath> getDronesPaths(DB database) {
-        DBCollection collection = database.getCollection("drone_path");
+        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
         DBCursor cursor = collection.find();
         List<DronePath> dronePaths = new ArrayList<>();
 
@@ -66,9 +68,9 @@ public class DroneService {
     }
 
     public static DronePath saveDronePath(DB database, DronePath dronePath) {
-        DBCollection collection = database.getCollection("drone_path");
+        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
 
-        DBObject query = new BasicDBObject("_id", dronePath.getDroneName());
+        DBObject query = new BasicDBObject(DB_ID, dronePath.getDroneName());
         if (collection.find(query).size() == 0) {
             collection.insert(dronePath.getDronePathMongoBDObject());
         } else {
@@ -79,7 +81,7 @@ public class DroneService {
     }
 
     public static List<DronePath> removeDronesPaths(DB database) {
-        DBCollection collection = database.getCollection("drone_path");
+        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
         DBCursor cursor = collection.find();
         List<DronePath> dronePaths = new ArrayList<>();
 

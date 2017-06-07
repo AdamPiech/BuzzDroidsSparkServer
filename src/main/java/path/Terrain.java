@@ -1,136 +1,76 @@
+package path;
 
-import static java.lang.Math.abs;
-import static java.lang.Math.atan;
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
+import dataModel.Coordinates;
+
 import java.util.ArrayList;
+import java.util.List;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author Ola
- */
+import static java.lang.Math.*;
+
 public class Terrain {
 
-    public ArrayList<Boundary> borders;
-    public ArrayList<Point> boundary_points;
+    public List<Boundary> borders;
+    public List<Coordinates> boundaryPoints;
 
-    public Terrain(ArrayList<Point> boundary_points) {
-        this.boundary_points = boundary_points;
-        this.borders = new ArrayList<Boundary>();
-    }
-    
     public Terrain() {
-        this.boundary_points = new ArrayList<Point>();
-        this.borders = new ArrayList<Boundary>();
+        this.boundaryPoints = new ArrayList();
+        this.borders = new ArrayList<>();
     }
 
-    public void add_point_coord(double lat, double lon) {
-        Point coords = new Point();
-        coords.latitude = lat;
-        coords.longtitude = lon;
-	this.boundary_points.add(coords);
-    }
+    public void generateBorders() {
+        borders.clear();
+        for (int index = 0; index < boundaryPoints.size(); index++) {
 
-    public double get_distance(Point start_point, Point end_point) {
-        double x = end_point.longtitude - start_point.longtitude;
-	double y = end_point.latitude - start_point.latitude;
-
-	return sqrt(pow(x, 2) + pow(y, 2));
-    }
-
-    public void generate_borders() {
-        	this.borders.clear();
-    for (int i=0; i < this.boundary_points.size(); i++)
-    {
-        Point start = this.boundary_points.get(i);
-        Point end = new Point();
-        
-        if(i < this.boundary_points.size() - 1)
-            end = this.boundary_points.get(i+1);
-        else
-            end = this.boundary_points.get(0);
-
-        double distance = get_distance(start, end);
-        double a = (end.latitude - start.latitude)/(end.longtitude - start.longtitude);
-	double b = start.latitude - a * start.longtitude;
-        Boundary bound = new Boundary();
-        bound.start_point = start;
-        bound.end_point = end;
-        bound.length = distance;
-        bound.a = a;
-        bound.b = b;
-        this.borders.add(bound);
-    }
-    }
-
-    public ArrayList<Point> get_bounary_points() {
-        return this.boundary_points;
-    }
-
-    public ArrayList<Boundary> get_borders() {
-        return this.borders;
-    }
-
-    public int get_horizontal_index() {
-    	for (int i = 0; i < this.borders.size(); i++)
-	{
-		Boundary bord = this.borders.get(i);
-		if (abs(atan(bord.a)) < 10 * Math.PI / 180)
-			return i;
-	}
-	return -1;
-    }
-
-    public Boundary get_next_border(Point p, boolean on_the_right, boolean up) {
-        System.out.printf("p.lat: %.15f\n", p.latitude);
-        System.out.printf("p.long: %.15f\n", p.longtitude);
-
-        for (int i = 0; i < this.borders.size(); i++) {
-            Boundary bord = this.borders.get(i);
-            if (up) {
-                if (on_the_right) {
-                    if (bord.start_point.latitude < p.latitude
-                            && bord.start_point.longtitude > p.longtitude
-                            && bord.end_point.latitude > p.latitude
-                            && bord.end_point.longtitude > p.longtitude) {
-                        return bord;
-                    }
-                } else if (bord.end_point.latitude < p.latitude
-                        && bord.end_point.longtitude < p.longtitude
-                        && bord.start_point.latitude > p.latitude
-                        && bord.start_point.longtitude < p.longtitude) {
-                    return bord;
-                }
-            } else if (on_the_right) {
-                if (bord.start_point.latitude > p.latitude && bord.end_point.longtitude < p.longtitude) {
-                    return bord;
-                } else {
-                    if (bord.end_point.latitude > p.latitude && bord.start_point.longtitude < p.longtitude) {
-                        return bord;
-                    }
-                }
+            Coordinates startCoor = boundaryPoints.get(index);
+            Coordinates endCoor = new Coordinates();
+            if (index < this.boundaryPoints.size() - 1) {
+                endCoor = this.boundaryPoints.get(index + 1);
+            } else {
+                endCoor = this.boundaryPoints.get(0);
             }
-            /*if (bord.end_point.latitude > p.latitude && up)
-		{
-			if (bord.start_point.longtitude > p.longtitude && on_the_right)
-				return bord;
-			else if (bord.start_point.longtitude < p.longtitude && !on_the_right)
-				return bord;
-		}
-		else if (bord.end_point.latitude < p.latitude && !up)
-		{
-			if (bord.start_point.longtitude > p.longtitude && on_the_right)
-				return bord;
-			else if (bord.start_point.longtitude < p.longtitude && !on_the_right)
-				return bord;
-		}*/
+
+            double distance = getDistance(startCoor, endCoor);
+            double factorA = (endCoor.getLatitude() - startCoor.getLatitude())
+                    / (endCoor.getLongitude() - startCoor.getLongitude());
+            double factorB = startCoor.getLatitude() - factorA * startCoor.getLongitude();
+
+            borders.add(new Boundary(startCoor, endCoor, factorA, factorB, distance));
         }
-        return new Boundary();
+    }
+
+    public int getHorizontalIndex() {
+        for (int index = 0; index < borders.size(); index++) {
+            Boundary border = borders.get(index);
+            if (abs(atan(border.factorA)) < 10 * PI / 180)
+                return index;
+        }
+        return -1;
+    }
+
+    public double getDistance(Coordinates startPoint, Coordinates endPoint) {
+        double factorX = endPoint.getLongitude() - startPoint.getLongitude();
+        double factorY = endPoint.getLatitude() - startPoint.getLatitude();
+        return sqrt(pow(factorX, 2) + pow(factorY, 2));
+    }
+
+    public void addPointCoordinates(Coordinates coordinates) {
+        this.boundaryPoints.add(coordinates);
+    }
+
+    public List<Boundary> getBorders() {
+        return borders;
+    }
+
+    public void setBorders(List<Boundary> borders) {
+        this.borders = borders;
+    }
+
+    public List<Coordinates> getBoundaryPoints() {
+        return boundaryPoints;
+    }
+
+    public void setBoundaryPoints(List<Coordinates> boundaryPoints) {
+        this.boundaryPoints = boundaryPoints;
     }
 
 }
