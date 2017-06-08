@@ -1,12 +1,14 @@
 package utils.services;
 
+import Implementations.Path;
+import Implementations.Terrain;
 import com.google.gson.Gson;
 import com.mongodb.*;
-import dataModel.DroneLocation;
-import dataModel.DronePath;
+import dataModel.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static utils.Utils.*;
 
@@ -55,42 +57,68 @@ public class DroneService {
         return droneLocations;
     }
 
-    public static List<DronePath> getDronesPaths(DB database) {
-        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
-        DBCursor cursor = collection.find();
-        List<DronePath> dronePaths = new ArrayList<>();
+    public static DronePath getDronePath(DB database) {
+        FlightArea flightArea = FlightService.getFlightArea(database);
 
-        while (cursor.hasNext()) {
-            dronePaths.add(new Gson().fromJson(cursor.next().toString(), DronePath.class));
-        }
+        Terrain terrain = new Terrain();
+        terrain.setBoundaryPoints(flightArea.getFullFlightArea()
+                .stream()
+                .sorted((p1, p2) -> Integer.compare(p1.getOrder(), p2.getOrder()))
+                .map(p -> p.getCoordinates())
+                .map(c -> new Implementations.Coordinates(c.getLatitude(), c.getLongitude()))
+                .collect(Collectors.toList()));
+        terrain.generateBorders();
 
-        return dronePaths;
-    }
+        Path path = new Path(terrain, (int) flightArea.getPathResolution());
+        List<Coordinates> coordinates = path.calculatePath()
+                .stream()
+                .map(c -> new Coordinates(c.getLatitude(), c.getLongitude()))
+                .collect(Collectors.toList());
 
-    public static DronePath saveDronePath(DB database, DronePath dronePath) {
-        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
-
-        DBObject query = new BasicDBObject(DB_ID, dronePath.getDroneName());
-        if (collection.find(query).size() == 0) {
-            collection.insert(dronePath.getDronePathMongoBDObject());
-        } else {
-            collection.update(query, dronePath.getDronePathMongoBDObject());
+        DronePath dronePath = new DronePath("Drone", new ArrayList<>());
+        for (int index = 0; index < coordinates.size(); index++) {
+            dronePath.getPath().add(new PointLocation("POINT_" + index, index, coordinates.get(index)));
         }
 
         return dronePath;
     }
 
-    public static List<DronePath> removeDronesPaths(DB database) {
-        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
-        DBCursor cursor = collection.find();
-        List<DronePath> dronePaths = new ArrayList<>();
+//    public static List<DronePath> getDronePath(DB database) {
+//        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
+//        DBCursor cursor = collection.find();
+//        List<DronePath> dronePaths = new ArrayList<>();
+//
+//        while (cursor.hasNext()) {
+//            dronePaths.add(new Gson().fromJson(cursor.next().toString(), DronePath.class));
+//        }
+//
+//        return dronePaths;
+//    }
 
-        while (cursor.hasNext()) {
-            collection.remove(cursor.getQuery());
-            dronePaths.add(new Gson().fromJson(cursor.next().toString(), DronePath.class));
-        }
+//    public static DronePath saveDronePath(DB database, DronePath dronePath) {
+//        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
+//
+//        DBObject query = new BasicDBObject(DB_ID, dronePath.getDroneName());
+//        if (collection.find(query).size() == 0) {
+//            collection.insert(dronePath.getDronePathMongoBDObject());
+//        } else {
+//            collection.update(query, dronePath.getDronePathMongoBDObject());
+//        }
+//
+//        return dronePath;
+//    }
 
-        return dronePaths;
-    }
+//    public static List<DronePath> removeDronesPaths(DB database) {
+//        DBCollection collection = database.getCollection(DB_RESOURCES_DRONE_PATH);
+//        DBCursor cursor = collection.find();
+//        List<DronePath> dronePaths = new ArrayList<>();
+//
+//        while (cursor.hasNext()) {
+//            collection.remove(cursor.getQuery());
+//            dronePaths.add(new Gson().fromJson(cursor.next().toString(), DronePath.class));
+//        }
+//
+//        return dronePaths;
+//    }
 
 }

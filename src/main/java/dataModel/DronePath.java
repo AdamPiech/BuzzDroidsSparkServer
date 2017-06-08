@@ -16,6 +16,11 @@ public class DronePath {
     private String droneName;
     private List<PointLocation> path;
 
+    public DronePath(String droneName, List<PointLocation> path) {
+        this.droneName = droneName;
+        this.path = path;
+    }
+
     public String getDroneName() {
         return droneName;
     }

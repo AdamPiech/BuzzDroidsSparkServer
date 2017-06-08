@@ -12,7 +12,10 @@ import java.util.List;
 
 public class Utils {
 
+    public static final String DB_ADDRESS = "172.17.0.2";
+    public static final int DB_PORT = 27017;
     public static final int SERVER_PORT = 9000;
+    public static final String DB_NAME = "mydb";
 
     public static final String LOG_PROPERTIES_FILE = "slf4j.properties";
 
@@ -31,7 +34,7 @@ public class Utils {
         points.add(new PointLocation("LAK_01", 9, new Coordinates(50.0931667, 20.1916000)));
 //        points.add(new PointLocation("LAK_02", 8, new Coordinates(50.0931667, 20.2000000)));
         points.add(new PointLocation("LAK_03", 7, new Coordinates(50.0931667, 20.2066167)));
-        points.add(new PointLocation("LAK_04", 6, new Coordinates(50.0903500, 20.2090667)));
+        points.add(new PointLocation("LAK_04", 6, new Coordinates(50.0903500, 20.2090666)));
         points.add(new PointLocation("LAK_05", 5, new Coordinates(50.0883333, 20.2090667)));
 //        points.add(new PointLocation("LAK_06", 4, new Coordinates(50.0883333, 20.2029000)));
 //        points.add(new PointLocation("LAK_07", 3, new Coordinates(50.0883333, 20.2000000)));
