@@ -11,6 +11,7 @@ public class Beacon {
     private String name;
     private String color;
     private Coordinates coordinates;
+    private String imageContent;
 
     public String getName() {
         return name;
@@ -34,6 +35,14 @@ public class Beacon {
 
     public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public String getImageContent() {
+        return imageContent;
+    }
+
+    public void setImageContent(String imageContent) {
+        this.imageContent = imageContent;
     }
 
     public DBObject getBeaconMongoBDObject() {

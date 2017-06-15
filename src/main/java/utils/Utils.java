@@ -3,6 +3,7 @@ package utils;
 import dataModel.Coordinates;
 import dataModel.PointLocation;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,9 @@ public class Utils {
     public static final String LOG_PROPERTIES_FILE = "slf4j.properties";
 
     public static final String CONTENT_TYPE = "application/json";
+    public static final String UPLOAD_CONTENT_TYPE = "multipart/form-data";
+
+    public static final String LINUX_PATH = File.separator + "home" + File.separator + "buzzdroids" + File.separator + "ftp";
 
     public static final double PATH_RESOLUTIONS = 5.0;
 
@@ -41,7 +45,7 @@ public class Utils {
 //        points.add(new PointLocation("LAK_08", 2, new Coordinates(50.0883333, 20.1970000)));
         points.add(new PointLocation("LAK_09", 1, new Coordinates(50.0883333, 20.1926833)));
         points.add(new PointLocation("LAK_10", 11, new Coordinates(50.0906167, 20.1919500)));
-        points.add(new PointLocation("LAK_11", 10, new Coordinates(50.0916333, 20.1916000)));
+        points.add(new PointLocation("LAK_11", 10, new Coordinates(50.0916333, 20.1916001)));
         return points;
     }
 
