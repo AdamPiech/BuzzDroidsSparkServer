@@ -39,6 +39,7 @@ public class RESTService {
         post("/drone/location", (req, res) -> saveDroneLocation(database, req.body()), toJson());
         post("/flight/area", (req, res) -> saveFlightArea(database, req.body()), toJson());
 
+
         post("/uploadImage", UPLOAD_CONTENT_TYPE, (req, res) -> saveImageFile(req, res));
 
         delete("/beacon/reset", (req, res) -> removeAllBeacons(database), toJson());
