@@ -1,10 +1,10 @@
 package utils.services;
 
-import Implementations.Path;
-import Implementations.Terrain;
+import Implementations.*;
 import com.google.gson.Gson;
 import com.mongodb.*;
 import dataModel.*;
+import dataModel.Coordinates;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,7 +69,8 @@ public class DroneService {
                 .collect(Collectors.toList()));
         terrain.generateBorders();
 
-        Path path = new Path(terrain, (int) flightArea.getPathResolution());
+        Path path = new Path(terrain, (int) flightArea.getPathResolution(), new Implementations.Coordinates(
+                DRONE_START_POINT.getCoordinates().getLatitude(), DRONE_START_POINT.getCoordinates().getLongitude()));
         List<Coordinates> coordinates = path.calculatePath()
                 .stream()
                 .map(c -> new Coordinates(c.getLatitude(), c.getLongitude()))

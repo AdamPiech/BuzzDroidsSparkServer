@@ -25,13 +25,16 @@ public class Utils {
 
     public static final String LINUX_PATH = File.separator + "home" + File.separator + "buzzdroids" + File.separator + "ftp";
 
-    public static final double PATH_RESOLUTIONS = 5.0;
+    public static final double PATH_RESOLUTIONS = 30.0;
 
     public static final String DB_ID = "_id";
     public static final String DB_RESOURCES_BEACONS = "beacons";
     public static final String DB_RESOURCES_DRONE_LOCATION = "drone_location";
     public static final String DB_RESOURCES_DRONE_PATH = "drone_path";
     public static final String DB_RESOURCES_FLIGHT_AREA = "flight_area";
+
+    public static final PointLocation DRONE_START_POINT =
+            new PointLocation("LAK_START", 0, new Coordinates(50.17694444, 20.41111111));
 
     public static List<PointLocation> getFlightArea() {
         List<PointLocation> points = new ArrayList<>();
