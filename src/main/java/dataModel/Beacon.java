@@ -10,6 +10,7 @@ public class Beacon {
 
     private String name;
     private String color;
+    private String alias;
     private Coordinates coordinates;
     private String imageContent;
 
@@ -27,6 +28,14 @@ public class Beacon {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getAlias() {
+        return alias;
+    }
+
+    public void setAlias(String alias) {
+        this.alias = alias;
     }
 
     public Coordinates getCoordinates() {

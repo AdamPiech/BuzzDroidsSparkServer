@@ -40,34 +40,55 @@ public class RESTService {
         post("/flight/area", (req, res) -> saveFlightArea(database, req.body()), toJson());
 
 
-        post("/uploadImage", UPLOAD_CONTENT_TYPE, (req, res) -> saveImageFile(req, res));
+//        post("/uploadImage", UPLOAD_CONTENT_TYPE, (req, res) -> saveImageFile(req, res));
 
         delete("/beacon/reset", (req, res) -> removeAllBeacons(database), toJson());
         delete("/drone/location/reset", (req, res) -> removeDronesLocations(database), toJson());
         delete("/flight/area/reset", (req, res) -> removeFlightArea(database), toJson());
 //        Spark.delete("/drone/path/reset", (req, res) -> removeDronesPaths(database), toJson());
+
+        post("/uploadImage", (req, res) -> {
+            File upload = new File("uploadImage");
+            DiskFileItemFactory factory = new DiskFileItemFactory();
+            factory.setRepository(upload);
+            ServletFileUpload fileUpload = new ServletFileUpload(factory);
+            List<FileItem> items = null;
+            try {
+                items = fileUpload.parseRequest(req.raw());
+            } catch (FileUploadException e) {
+                e.printStackTrace();
+            }
+            FileItem item = items.stream().findFirst().get();
+            try {
+                item.write(new File(LINUX_PATH, item.getName()));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            halt(200);
+            return null;
+        });
     }
 
 
-    private static Object saveImageFile(Request req, Response res) {
-        File upload = new File("uploadImage");
-        DiskFileItemFactory factory = new DiskFileItemFactory();
-        factory.setRepository(upload);
-        ServletFileUpload fileUpload = new ServletFileUpload(factory);
-        List<FileItem> items = null;
-        try {
-            items = fileUpload.parseRequest(req.raw());
-        } catch (FileUploadException e) {
-            e.printStackTrace();
-        }
-        FileItem item = items.stream().findFirst().get();
-        try {
-            item.write(new File(LINUX_PATH, item.getName()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        halt(200);
-        return null;
-    }
+//    private static Object saveImageFile(Request req, Response res) {
+//        File upload = new File("uploadImage");
+//        DiskFileItemFactory factory = new DiskFileItemFactory();
+//        factory.setRepository(upload);
+//        ServletFileUpload fileUpload = new ServletFileUpload(factory);
+//        List<FileItem> items = null;
+//        try {
+//            items = fileUpload.parseRequest(req.raw());
+//        } catch (FileUploadException e) {
+//            e.printStackTrace();
+//        }
+//        FileItem item = items.stream().findFirst().get();
+//        try {
+//            item.write(new File(LINUX_PATH, item.getName()));
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        halt(200);
+//        return null;
+//    }
 
 }
